@@ -1,2 +1,52 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<app-navbar class="header"></app-navbar>
+<div class="mobile-nav" id="mobile-navbar">
+  <button
+    class="menu-icon close"
+    name="Toggle menu button"
+    role="button"
+    aria-pressed="false"
+    [class.open]="opened"
+    mode="push"
+    (click)="sidenav.toggle(); toggleOpen()"
+    [@menuAnimation]="openValue"
+    >
+  <span class="icon1"></span>
+  <span class="icon2"></span>
+  <span class="icon3"></span>
+  </button>
+</div>
+<mat-sidenav-container
+  class="dresen side-drawer"
+  (backdropClick)=toggleClose()
+  >
+  <mat-sidenav
+    #sidenav
+    position="start"
+    class="sidenav"
+    >
+    <mat-nav-list
+      class="dresen-list"
+      disableRipple
+      >
+      <a mat-list-item
+        *ngFor="let item of navigation"
+        (click)="sidenav.close()"
+        (mousedown)="toggleOpen()"
+        routerLinkActive
+        #routerLinkActiveInstance="routerLinkActive"
+        [attr.tabindex]="routerLinkActiveInstance.isActive"
+        [class.list-item-active]="routerLinkActiveInstance.isActive"
+        [routerLink]='[item.link]'
+        class="list-item"
+      >{{item.title}}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content
+    class="sidenav-content dresen-sidenav"
+    >
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
