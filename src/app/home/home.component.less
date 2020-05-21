@@ -1,0 +1,150 @@
+@import "_variables.less";
+.hello {
+  background: linear-gradient(.08turn, #28495a, #508fb1);
+  overflow-x: hidden;
+  overflow-y: auto;
+  h1 {
+    font-size: 25vw;
+    margin-left: -1vw;
+    .rem-px(padding-top, 200);
+    // .rem-px(margin-left, -5);
+    line-height: 1;
+    color: @light-color;
+    @media screen and (min-width: @tablet-break) {
+      // .font-size(300);
+      // .rem-px(margin-left, -10);
+    }
+    @media screen and (min-width: @desktop-break) {
+      // .font-size(500);
+      // .rem-px(margin-left, -32);
+      .rem-px(padding-top, 227);
+    }
+  }
+
+  p {
+    .font-size(16);
+    color: @light-color;
+    //.rem-px(padding-left, 115);
+    padding-left: 30vw;
+    .rem-px(padding-right, 30);
+    .rem-px(margin-top, 2);
+    @media screen and (min-width: @tablet-break) {
+      // .rem-px(padding-left, 354);
+      .font-size(22);
+      .rem-px(margin-top, -19);
+    }
+    @media screen and (min-width: @desktop-break) {
+      // .rem-px(padding-left, 600);
+      //.rem-px(margin-top, -57);
+      .rem-px(padding-bottom, 42);
+    }
+    // @media screen and (min-width: @large-desktop-break) {
+    //   .font-size(30);
+    // }
+  }
+  .down-arrow {
+    .rem-px(height, 30);
+    .rem-px(width, 50);
+    background-color: @light-color;
+    margin: 3.4rem auto;
+    display: block;
+    .rem-px(margin-bottom, 22);
+    @media screen and (min-width: @tablet-break) {
+      .rem-px(height, 40);
+      .rem-px(width, 70);
+      .rem-px(margin-bottom, 40);
+    }
+  }
+}
+
+
+.intro {
+  background-color: @dark-secondary-color;
+  color: @light-secondary-color;
+  .intro-title {
+    width: 100%;
+    h2 {
+      padding-left: @pad-mobile;
+      padding-top: @pad-mobile;
+      width: 45vw;
+      .rem-px(min-width, 220);
+      .font-size(18);
+      .rem-px(padding-bottom, 100);
+    }
+  }
+  .intro-text {
+    width: 100%;
+    padding: @pad-mobile;
+    background-color: @light-color;
+    p {
+      color: @dark-secondary-color;
+    }
+  }
+}
+@media screen and (min-width: @tablet-break) {
+  .intro {
+    .intro-title {
+      background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      h2 {
+        padding-left: @pad-tablet;
+        padding-top: @pad-tablet;
+        .font-size(32);
+        width: 45vw;
+      }
+    }
+    .intro-text {
+      padding: @pad-tablet;
+      p {
+        .font-size(26);
+      }
+    }
+  }
+}
+@media screen and (min-width: @desktop-break) {
+  .intro {
+    background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    .intro-title {
+      background-image: none;
+      h2 {
+        padding-left: @pad-desktop-x;
+        padding-top: @pad-desktop-y;
+        width: 60vw;
+        .font-size(44);
+      }
+    }
+    .intro-text {
+      background-color: transparent;
+      padding: 0 @pad-desktop-x;
+      padding-bottom: @pad-desktop-y;
+      width: 60%;
+      p {
+        color: @light-color;
+        .font-size(22);
+      }
+    }
+  }
+}
+@media screen and (min-width: @large-desktop-break) {
+  .intro {
+    background-size: contain;
+    .intro-title {
+      h2 {
+          width: 60vw;
+          .font-size(64);
+        }
+    }
+    .intro-text {
+      width: 60%;
+      .p {
+        .font-size(28);
+        line-height: 1.5;
+      }
+    }
+  }
+}

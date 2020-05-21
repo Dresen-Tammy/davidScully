@@ -1,0 +1,50 @@
+@import "_variables.less";
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+ul {
+  display: none;
+
+  @media screen and (min-width: @tablet-break) {
+    display: block;
+    margin-left:30vw;
+    //.rem-px(margin-left, 354);
+    .rem-px(margin-top, 34);
+  }
+  @media screen and (min-width: @desktop-break) {
+    //.rem-px(margin-left, 606);
+    .rem-px(margin-top, 57);
+  }
+}
+li {
+  display: inline-block;
+  color: @light-color;
+  .font-size(22);
+  .rem-px(margin-right, 50);
+  font-weight: 300;
+  // @media screen and (min-width: @large-desktop-break) {
+  //   .font-size(30);
+  // }
+}
+
+a, a:link {
+  color: @light-color;
+  text-decoration: none;
+}
+
+button {
+  .rem-px(height, 28);
+  .rem-px(width, 40);
+  color: @light-color;
+  .rem-px(margin-top, 23.5);
+  .rem-px(margin-left, 23.5);
+  @media screen and (min-width: @tablet-break) {
+    display: none;
+  }
+}
+
+

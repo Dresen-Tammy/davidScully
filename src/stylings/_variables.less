@@ -1,0 +1,43 @@
+/* Mixins */
+.font-size(@sizeValue) {
+  @remValue: (@sizeValue/16);
+  @pxValue: @sizeValue;
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
+.rem-px(@property, @sizeValue) {
+  @value: (@sizeValue/16);
+  @{property}: ~"@{sizeValue}px";
+  @{property}: ~"@{value}rem";
+}
+
+.strip-unit(@num) {
+  @result: (@num / (@num * 0 + 1));
+}
+
+.rem(@sizeValue) {
+  @value: (@sizeValue/16) + 'rem';
+  return: @value;
+}
+
+// colors
+@light-color: #EBEBEB;
+@light-secondary-color: #EFF1F2;
+@main-color: #508FB1;
+@dark-color: #263852;
+@dark-secondary-color: #2F3438;
+@main-gradient: linear-gradient(.08turn, #28495A, @main-color);
+@dark-gradient: linear-gradient(.08turn, @dark-secondary-color, @dark-color);
+
+
+// breaks
+@tablet-break: 45em;
+@desktop-break: 64em;
+@large-desktop-break: 92em;
+
+
+// margins and paddings
+@pad-mobile: 1.875rem;
+@pad-tablet: 2.813rem;
+@pad-desktop-x: 8.75rem;
+@pad-desktop-y: 7.1875rem;
