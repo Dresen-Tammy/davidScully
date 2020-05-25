@@ -1,86 +1,100 @@
 @import "_variables.less";
+
 .hello {
   background: linear-gradient(.08turn, #28495a, #508fb1);
-  overflow-x: hidden;
   overflow-y: auto;
+  overflow-x: hidden;
   h1 {
+    color: @light-color;
     font-size: 25vw;
     margin-left: -1vw;
-    .rem-px(padding-top, 200);
-    // .rem-px(margin-left, -5);
     line-height: 1;
-    color: @light-color;
-    @media screen and (min-width: @tablet-break) {
-      // .font-size(300);
-      // .rem-px(margin-left, -10);
-    }
+    .rem-px(padding-top, 200);
+
     @media screen and (min-width: @desktop-break) {
-      // .font-size(500);
-      // .rem-px(margin-left, -32);
       .rem-px(padding-top, 227);
     }
   }
 
   p {
-    .font-size(16);
     color: @light-color;
-    //.rem-px(padding-left, 115);
+    .font-size(16);
+    .rem-px(margin-top, 2);
     padding-left: 30vw;
     .rem-px(padding-right, 30);
-    .rem-px(margin-top, 2);
+    width: 100vw;
+
     @media screen and (min-width: @tablet-break) {
-      // .rem-px(padding-left, 354);
       .font-size(22);
       .rem-px(margin-top, -19);
     }
+
     @media screen and (min-width: @desktop-break) {
-      // .rem-px(padding-left, 600);
-      //.rem-px(margin-top, -57);
       .rem-px(padding-bottom, 42);
     }
-    // @media screen and (min-width: @large-desktop-break) {
-    //   .font-size(30);
-    // }
+  }
+  .arrow {
+    border: solid @light-color;
+    border-width: 0 .0625rem .0625rem 0;
+    display: inline-block;
+    .rem-px(padding, 22);
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg) translate(-1.9rem, -1.5rem);
   }
   .down-arrow {
-    .rem-px(height, 30);
-    .rem-px(width, 50);
-    background-color: @light-color;
-    margin: 3.4rem auto;
     display: block;
+    position: relative;
+    .rem-px(height, 30);
+    margin: 3.4rem auto;
     .rem-px(margin-bottom, 22);
+    margin-left: calc(50vw - (2.1875rem/2));
+    .rem-px(width, 35);
+
     @media screen and (min-width: @tablet-break) {
       .rem-px(height, 40);
-      .rem-px(width, 70);
+      margin-left: auto;
       .rem-px(margin-bottom, 40);
+      .rem-px(width, 70);
+    }
+    .part1 {
+      background-color: @light-color;
+      width: 25px;
+      height: 1.5px;
+      transform: translate(2px) rotate(.3turn);
+      content: '';
     }
   }
 }
 
-
 .intro {
   background-color: @dark-secondary-color;
   color: @light-secondary-color;
+
   .intro-title {
     width: 100%;
+
     h2 {
-      padding-left: @pad-mobile;
-      padding-top: @pad-mobile;
-      width: 45vw;
-      .rem-px(min-width, 220);
       .font-size(18);
       .rem-px(padding-bottom, 100);
+      padding-left: @pad-mobile;
+      padding-top: @pad-mobile;
+      .rem-px(min-width, 220);
+      width: 45vw;
     }
   }
   .intro-text {
     width: 100%;
     padding: @pad-mobile;
     background-color: @light-color;
+
     p {
       color: @dark-secondary-color;
     }
   }
 }
+
 @media screen and (min-width: @tablet-break) {
   .intro {
     .intro-title {
@@ -88,6 +102,7 @@
       background-position: top right;
       background-repeat: no-repeat;
       background-size: cover;
+
       h2 {
         padding-left: @pad-tablet;
         padding-top: @pad-tablet;
@@ -95,8 +110,10 @@
         width: 45vw;
       }
     }
+
     .intro-text {
       padding: @pad-tablet;
+
       p {
         .font-size(26);
       }
@@ -109,20 +126,24 @@
     background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
+
     .intro-title {
       background-image: none;
+
       h2 {
+        .font-size(44);
         padding-left: @pad-desktop-x;
         padding-top: @pad-desktop-y;
         width: 60vw;
-        .font-size(44);
       }
     }
+
     .intro-text {
       background-color: transparent;
       padding: 0 @pad-desktop-x;
       padding-bottom: @pad-desktop-y;
       width: 60%;
+
       p {
         color: @light-color;
         .font-size(22);
@@ -130,17 +151,23 @@
     }
   }
 }
+
 @media screen and (min-width: @large-desktop-break) {
   .intro {
+
     background-size: contain;
+
     .intro-title {
+
       h2 {
+        .font-size(64);
           width: 60vw;
-          .font-size(64);
         }
     }
+
     .intro-text {
       width: 60%;
+
       .p {
         .font-size(28);
         line-height: 1.5;

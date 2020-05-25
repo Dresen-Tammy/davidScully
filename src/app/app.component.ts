@@ -45,4 +45,7 @@ export class AppComponent {
     }
   }
 
+  private openNav(): void {
+
+  }
 }

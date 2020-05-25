@@ -1,7 +1,9 @@
 <section class="hello">
   <h1>hello</h1>
   <p>Thank you for visiting. Please feel free to browse and leave a&nbsp;message.</p>
-  <button class="down-arrow" aria-label="Scroll to portfolio"></button>
+  <span class="down-arrow">
+    <i class="arrow down"></i>
+  </span>
 </section>
 <section class="intro">
   <div class="intro-title">
@@ -16,4 +18,8 @@
       and co-founded Glacier Marketing, an independent design and marketing studio, in&nbsp;2009.</p>
   </div>
 </section>
+<ngx-loadable [module]="'portfolio'" [show]="true">
+  <ng-template #loading>Loading...</ng-template>
+</ngx-loadable>
+
 

@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { LoadableModule, matcher } from 'ngx-loadable';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,11 @@ import { MatListModule } from '@angular/material/list';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    LoadableModule.forRoot({
+			moduleConfigs: [
+        { name: 'portfolio', loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule), matcher }]
+		})
   ],
   providers: [],
   bootstrap: [AppComponent]
