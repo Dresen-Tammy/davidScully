@@ -1,78 +1,136 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import "_variables.less";
 
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
+.mobile-nav {
+  position: absolute;
+  z-index: 999;
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+  @media screen and (min-width: @tablet-break) {
+    display: none;
   }
+}
+
+button.close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  .rem-px(height, 28);
+  .rem-px(margin-left, 23.5);
+  .rem-px(margin-top, 23.5);
+  position: relative;
+  .rem-px(width, 45);
+
+  &:hover {
+    .icon1, .icon2, .icon3 {
+      //background-color: @light-secondary-color;
+    }
+  }
+
+  .icon1 {
+    background-color: @light-color;
+    content: '';
+    .rem-px(height, 1);
+    position: absolute;
+    transform: translate(-1.125rem, -.8rem);
+    .rem-px(width, 30);
+  }
+
+  .icon2 {
+    background-color: @light-color;
+    content: '';
+    .rem-px(height, 1);
+    position: absolute;
+    transform: translate(-1.125rem, 0rem);
+    .rem-px(width, 40);
+  }
+
+  .icon3 {
+    background-color: @light-color;
+    content: '';
+    .rem-px(height, 1);
+    position: absolute;
+    transform: translate(-1.125rem, .8rem);
+    .rem-px(width, 20);
+  }
+}
+
+.mobile-nav .menu-icon.open .icon1 {
+  transform: translate(-1.125rem,-.4rem) rotate(-.1turn);
+  .rem-px(width, 23.5);
+}
+
+.mobile-nav .menu-icon.open .icon2 {
+  transform: translate(-1.125rem,-.4rem) rotate(-.1turn);
+  .rem-px(width, 23.5);
+}
+
+.mobile-nav .menu-icon.open .icon3 {
+  transform: translate(-1.125rem,.47rem) rotate(.6turn);
+  .rem-px(width, 23.5);
+}
+
+
+.nav-behind {
+  background: linear-gradient(.08turn, #1E2226 70%, #384045, #828589);
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+
+  @media screen and (min-width: @tablet-break) {
+    display: none;
+  }
+
+  .dresen-list {
+    .rem-px(padding-top, 75);
+    .rem-px(padding-left, 20);
+  }
+
+  .mat-list-base .mat-list-item {
+    color: #707070;
+    .font-size(16);
+    font-weight: 200;
+    .rem-px(height, 41);
+    text-align: left;
+    .rem-px(width, 80);
+  }
+}
+
+:host /deep/ .mat-list-item-content {
+  padding: 0!important;
+  .rem-px(width, 143);
+}
+
+.nav-icon {
+  padding-bottom: 10px;
+  padding-right: 14px;
+}
+
+.nav-content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #707070;
+  .rem-px(width, 102.5);
+}
+
+.main-content {
+  box-shadow: 0px 12px 16px #0000004D;
+  margin-left: 0;
+  margin-top: 0;
+  position: relative;
+  transition: all .5s;
+  width: 100vw;
+  z-index: 1;
+}
+
+.content {
+  position:relative;
+}
+
+.main-content.shift {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  transform: translate(50%, 4.6rem);
+  transition: all .5s;
 }

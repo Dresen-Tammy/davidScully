@@ -1,8 +1,22 @@
 <nav>
-  <button class="hamburger" aria-label="open mobile nav">burger</button>
   <ul class="nav">
-    <li ><a (click)="scrollToWork()" aria-label="View my work">work</a></li>
-    <li ><a (click)="scrollToAbout()" aria-label="Learn more about me">about</a></li>
-    <li ><a routerLink="" aria-label="Contact me">contact</a></li>
+    <li >
+      <a (click)="scrollToWork()" aria-label="View my work">
+        <img class="nav-icon" src="../assets/images/palette.svg" alt="art palette">
+        <span class="nav-content">work</span>
+      </a>
+    </li>
+    <li >
+      <a (click)="scrollToAbout()" aria-label="Learn more about me">
+        <img class="nav-icon" src="../assets/images/person.svg" alt="person">
+        <span class="nav-content">about</span>
+      </a>
+    </li>
+    <li >
+      <a routerLink="" aria-label="Contact me">
+        <img class="nav-icon" src="../assets/images/envelope.svg" alt="contact">
+        <span class="nav-content">contact</span>
+      </a>
+    </li>
   </ul>
 </nav>

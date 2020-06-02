@@ -33,9 +33,13 @@
               ]
             },
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [],
+            "lazyModules": [
+              "src/app/portfolio/portfolio.module"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,6 +101,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.less"
             ],
             "scripts": []
@@ -128,6 +133,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "daviddresen"
 }

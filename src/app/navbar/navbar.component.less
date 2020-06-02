@@ -1,50 +1,61 @@
 @import "_variables.less";
 nav {
-  position: absolute;
-  top: 0;
   left: 0;
+  position: absolute;
   right: 0;
-
+  top: 0;
+  z-index: 999;
 }
+
 ul {
   display: none;
 
   @media screen and (min-width: @tablet-break) {
     display: block;
-    margin-left:30vw;
-    //.rem-px(margin-left, 354);
+    margin-left:33.3vw;
     .rem-px(margin-top, 34);
   }
+
   @media screen and (min-width: @desktop-break) {
-    //.rem-px(margin-left, 606);
+    margin-left: 28.3vw;
     .rem-px(margin-top, 57);
   }
 }
+
 li {
-  display: inline-block;
   color: @light-color;
-  .font-size(22);
-  .rem-px(margin-right, 50);
+  display: inline-block;
+  font-size: 3.9vw;
   font-weight: 300;
-  // @media screen and (min-width: @large-desktop-break) {
-  //   .font-size(30);
-  // }
+  margin-right: 5vw;
+
+  @media screen and (min-width: @desktop-break) {
+   font-size: 1.6vw;
+   margin-right: 3.1vw;
+  }
 }
 
 a, a:link {
+  align-items: center;
   color: @light-color;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 1.2vw;
   text-decoration: none;
+
+  @media screen and (min-width: @desktop-break) {
+    gap: .9vw;
+   }
 }
 
 button {
-  .rem-px(height, 28);
-  .rem-px(width, 40);
   color: @light-color;
-  .rem-px(margin-top, 23.5);
+  .rem-px(height, 28);
   .rem-px(margin-left, 23.5);
+  .rem-px(margin-top, 23.5);
+  .rem-px(width, 40);
+
   @media screen and (min-width: @tablet-break) {
     display: none;
   }
 }
-
-

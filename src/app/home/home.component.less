@@ -1,146 +1,170 @@
 @import "_variables.less";
+
 .hello {
   background: linear-gradient(.08turn, #28495a, #508fb1);
-  overflow-x: hidden;
   overflow-y: auto;
+  overflow-x: hidden;
   h1 {
+    color: @light-color;
     font-size: 25vw;
     margin-left: -1vw;
-    .rem-px(padding-top, 200);
-    // .rem-px(margin-left, -5);
     line-height: 1;
-    color: @light-color;
+    .rem-px(padding-top, 200);
+
     @media screen and (min-width: @tablet-break) {
-      // .font-size(300);
-      // .rem-px(margin-left, -10);
+      font-size: 29vw
     }
+
     @media screen and (min-width: @desktop-break) {
-      // .font-size(500);
-      // .rem-px(margin-left, -32);
       .rem-px(padding-top, 227);
+      font-size: 25vw;
     }
   }
 
   p {
-    .font-size(16);
     color: @light-color;
-    //.rem-px(padding-left, 115);
+    font-size: 4.5vw;
+    font-weight: 300;
+    .rem-px(margin-top, 2);
+    .rem-px(margin-bottom, 64);
     padding-left: 30vw;
     .rem-px(padding-right, 30);
-    .rem-px(margin-top, 2);
+    width: 90vw;
+
     @media screen and (min-width: @tablet-break) {
-      // .rem-px(padding-left, 354);
-      .font-size(22);
-      .rem-px(margin-top, -19);
+      font-size: 4vw;
+      margin-top: 4vw;
+      padding-left: 33.3vw;
+      padding-right: 0;
     }
+
     @media screen and (min-width: @desktop-break) {
-      // .rem-px(padding-left, 600);
-      //.rem-px(margin-top, -57);
       .rem-px(padding-bottom, 42);
+      padding-left: 28.3vw;
+      font-size: 1.65vw;
+      margin-top: -2vw;
     }
-    // @media screen and (min-width: @large-desktop-break) {
-    //   .font-size(30);
-    // }
   }
-  .down-arrow {
-    .rem-px(height, 30);
-    .rem-px(width, 50);
-    background-color: @light-color;
-    margin: 3.4rem auto;
-    display: block;
-    .rem-px(margin-bottom, 22);
-    @media screen and (min-width: @tablet-break) {
-      .rem-px(height, 40);
-      .rem-px(width, 70);
-      .rem-px(margin-bottom, 40);
-    }
+
+  .arrow {
+    border: solid @light-color;
+    border-width: 0 .0625rem .0625rem 0;
+    display: inline-block;
+    .rem-px(padding, 22);
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg) translate(-1.9rem, -1.5rem);
   }
 }
-
 
 .intro {
   background-color: @dark-secondary-color;
   color: @light-secondary-color;
+
   .intro-title {
+    background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+
     h2 {
-      padding-left: @pad-mobile;
-      padding-top: @pad-mobile;
-      width: 45vw;
+      font-size: 4.4vw;
+      padding-bottom: 27vw;
+      padding-left: 7.7vw;
+      padding-top: 7vw;
       .rem-px(min-width, 220);
-      .font-size(18);
-      .rem-px(padding-bottom, 100);
+      width: 53vw;
     }
   }
+
   .intro-text {
+    background-color: #ffffff;
+    padding: 4vw 6vw;
     width: 100%;
-    padding: @pad-mobile;
-    background-color: @light-color;
+
     p {
       color: @dark-secondary-color;
+      font-size: 4vw;
+      font-weight: 300;
     }
   }
 }
+
 @media screen and (min-width: @tablet-break) {
   .intro {
     .intro-title {
-      background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
-      background-position: top right;
-      background-repeat: no-repeat;
       background-size: cover;
+
       h2 {
-        padding-left: @pad-tablet;
-        padding-top: @pad-tablet;
-        .font-size(32);
-        width: 45vw;
+        padding-left: 5.4vw;
+        padding-top: 5.9vw;
+        font-size: 4.35vw;
+        width: 49vw;
       }
     }
+
     .intro-text {
-      padding: @pad-tablet;
+      padding: 5.9vw 4vw 5.9vw 7vw;
+
       p {
-        .font-size(26);
+        font-size: 3.1vw;
       }
     }
   }
 }
+
 @media screen and (min-width: @desktop-break) {
   .intro {
     background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
-    background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: contain;
+
     .intro-title {
       background-image: none;
+
       h2 {
-        padding-left: @pad-desktop-x;
-        padding-top: @pad-desktop-y;
-        width: 60vw;
-        .font-size(44);
+        font-size: 3.3vw;
+        line-height: 4.5vw;
+        padding-bottom: 4vw;
+        padding-left: 7vw;
+        padding-top: 7vw;
+        width: 75vw;
       }
     }
+
     .intro-text {
       background-color: transparent;
-      padding: 0 @pad-desktop-x;
+      padding: 0 7vw;
       padding-bottom: @pad-desktop-y;
-      width: 60%;
+      width: 62vw;
+
       p {
         color: @light-color;
-        .font-size(22);
+        font-size: 1.5vw;
+        font-weight: 300;
       }
     }
   }
 }
+
 @media screen and (min-width: @large-desktop-break) {
   .intro {
     background-size: contain;
+
     .intro-title {
       h2 {
+        .font-size(64);
           width: 60vw;
-          .font-size(64);
         }
     }
+
     .intro-text {
       width: 60%;
+
       .p {
         .font-size(28);
         line-height: 1.5;
@@ -148,3 +172,4 @@
     }
   }
 }
+

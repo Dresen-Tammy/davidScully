@@ -1,19 +1,28 @@
 <section class="hello">
   <h1>hello</h1>
   <p>Thank you for visiting. Please feel free to browse and leave a&nbsp;message.</p>
-  <button class="down-arrow" aria-label="Scroll to portfolio"></button>
 </section>
 <section class="intro">
   <div class="intro-title">
     <h2>I’m David Dresen. I&nbsp;am currently the Global Creative Director on HP print’s
-      Advanced Strategy and Solutions design&nbsp;team.</h2>
+      Advanced Strategy and Solutions design&nbsp;team.
+    </h2>
   </div>
   <div class="intro-text">
     <p>Prior to my current role at HP, I was the Global Creative Competency Manager,
       driving visual consistency across all product touch points and geographies.
       I also previously worked at Logoworks as the Director of Design, a design startup
       that was eventually acquired by Hewlett Packard. I also worked at Wild Graphics studios,
-      and co-founded Glacier Marketing, an independent design and marketing studio, in&nbsp;2009.</p>
+      and co-founded Glacier Marketing, an independent design and marketing studio, in&nbsp;2009.
+    </p>
   </div>
 </section>
+<ngx-loadable
+  [module]="'portfolio'"
+  [show]="true"
+  >
+  <ng-template #loading>Loading...</ng-template>
+</ngx-loadable>
+<app-about></app-about>
+
 
