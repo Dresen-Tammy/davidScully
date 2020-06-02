@@ -1,31 +1,34 @@
 @import "_variables.less";
 nav {
-  position: absolute;
-  top: 0;
   left: 0;
+  position: absolute;
   right: 0;
+  top: 0;
   z-index: 999;
 }
+
 ul {
   display: none;
 
   @media screen and (min-width: @tablet-break) {
     display: block;
     margin-left:33.3vw;
-    //.rem-px(margin-left, 354);
     .rem-px(margin-top, 34);
   }
+
   @media screen and (min-width: @desktop-break) {
     margin-left: 28.3vw;
     .rem-px(margin-top, 57);
   }
 }
+
 li {
-  display: inline-block;
   color: @light-color;
+  display: inline-block;
   font-size: 3.9vw;
-  margin-right: 5vw;
   font-weight: 300;
+  margin-right: 5vw;
+
   @media screen and (min-width: @desktop-break) {
    font-size: 1.6vw;
    margin-right: 3.1vw;
@@ -33,26 +36,26 @@ li {
 }
 
 a, a:link {
-  display: grid;
-    grid-template-columns: 26px 1fr;
-    align-items: center;
-    gap: 1.2vw;
+  align-items: center;
   color: @light-color;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 1.2vw;
   text-decoration: none;
+
   @media screen and (min-width: @desktop-break) {
     gap: .9vw;
    }
 }
 
 button {
-  .rem-px(height, 28);
-  .rem-px(width, 40);
   color: @light-color;
-  .rem-px(margin-top, 23.5);
+  .rem-px(height, 28);
   .rem-px(margin-left, 23.5);
+  .rem-px(margin-top, 23.5);
+  .rem-px(width, 40);
+
   @media screen and (min-width: @tablet-break) {
     display: none;
   }
 }
-
-

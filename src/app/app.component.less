@@ -5,7 +5,7 @@
   z-index: 999;
 
   @media screen and (min-width: @tablet-break) {
-      display: none;
+    display: none;
   }
 }
 
@@ -62,6 +62,7 @@ button.close {
   transform: translate(-1.125rem,-.4rem) rotate(-.1turn);
   .rem-px(width, 23.5);
 }
+
 .mobile-nav .menu-icon.open .icon3 {
   transform: translate(-1.125rem,.47rem) rotate(.6turn);
   .rem-px(width, 23.5);
@@ -76,6 +77,7 @@ button.close {
   right: 0;
   position: absolute;
   top: 0;
+
   @media screen and (min-width: @tablet-break) {
     display: none;
   }
@@ -84,13 +86,14 @@ button.close {
     .rem-px(padding-top, 75);
     .rem-px(padding-left, 20);
   }
+
   .mat-list-base .mat-list-item {
     color: #707070;
     .font-size(16);
     font-weight: 200;
-    .rem-px(width, 80);
-    text-align: left;
     .rem-px(height, 41);
+    text-align: left;
+    .rem-px(width, 80);
   }
 }
 
@@ -98,24 +101,26 @@ button.close {
   padding: 0!important;
   .rem-px(width, 143);
 }
+
 .nav-icon {
-  padding-right: 14px;
   padding-bottom: 10px;
+  padding-right: 14px;
 }
+
 .nav-content {
-  .rem-px(width, 102.5);
   padding-bottom: 10px;
   border-bottom: 1px solid #707070;
+  .rem-px(width, 102.5);
 }
+
 .main-content {
-  //display: none;
-  z-index: 1;
-  position: relative;
-  margin-top: 0;
+  box-shadow: 0px 12px 16px #0000004D;
   margin-left: 0;
+  margin-top: 0;
+  position: relative;
   transition: all .5s;
   width: 100vw;
-  box-shadow: 0px 12px 16px #0000004D;
+  z-index: 1;
 }
 
 .content {
@@ -123,11 +128,9 @@ button.close {
 }
 
 .main-content.shift {
-  // padding-top: 4.69rem;
-  // margin-left: 50%;
   height: 100vh;
   overflow: hidden;
-  transition: all .5s;
   position: fixed;
   transform: translate(50%, 4.6rem);
+  transition: all .5s;
 }

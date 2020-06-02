@@ -1,34 +1,38 @@
 
 <div class="content">
-
-
   <div
     class="main-content"
     [class.shift]="opened"
     #main
   >
     <app-navbar class="header"></app-navbar>
-    <div class="mobile-nav" id="mobile-navbar">
-      <button
-      class="menu-icon close"
-      name="Toggle menu button"
-      role="button"
-      aria-pressed="false"
-      [class.open]="opened"
-      mode="push"
-      (click)="toggleOpen()"
-      [@menuAnimation]="openValue"
+    <div
+      class="mobile-nav"
+      id="mobile-navbar"
       >
-      <span class="icon1"></span>
-      <span class="icon2"></span>
-      <span class="icon3"></span>
-    </button>
+      <button
+        class="menu-icon close"
+        name="Toggle menu button"
+        role="button"
+        aria-pressed="false"
+        [class.open]="opened"
+        mode="push"
+        (click)="toggleOpen()"
+        [@menuAnimation]="openValue"
+        >
+        <span class="icon1"></span>
+        <span class="icon2"></span>
+        <span class="icon3"></span>
+      </button>
+    </div>
+    <main (click)="toggleClose()">
+      <router-outlet></router-outlet>
+    </main>
   </div>
-  <main (click)="toggleClose()">
-    <router-outlet></router-outlet>
-  </main>
-  </div>
-  <div class="nav-behind" (click)="toggleClose()">
+  <div
+    class="nav-behind"
+    (click)="toggleClose()"
+    >
     <mat-nav-list
       class="dresen-list"
       id="mobile-nav-list"

@@ -10,9 +10,11 @@
     margin-left: -1vw;
     line-height: 1;
     .rem-px(padding-top, 200);
+
     @media screen and (min-width: @tablet-break) {
       font-size: 29vw
     }
+
     @media screen and (min-width: @desktop-break) {
       .rem-px(padding-top, 227);
       font-size: 25vw;
@@ -43,38 +45,17 @@
       margin-top: -2vw;
     }
   }
+
   .arrow {
     border: solid @light-color;
     border-width: 0 .0625rem .0625rem 0;
     display: inline-block;
     .rem-px(padding, 22);
   }
+
   .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg) translate(-1.9rem, -1.5rem);
-  }
-  .down-arrow {
-    display: block;
-    position: relative;
-    .rem-px(height, 30);
-    margin: 3.4rem auto;
-    .rem-px(margin-bottom, 22);
-    margin-left: calc(50vw - (2.1875rem/2));
-    .rem-px(width, 35);
-
-    @media screen and (min-width: @tablet-break) {
-      .rem-px(height, 40);
-      margin-left: auto;
-      .rem-px(margin-bottom, 40);
-      .rem-px(width, 70);
-    }
-    .part1 {
-      background-color: @light-color;
-      width: 25px;
-      height: 1.5px;
-      transform: translate(2px) rotate(.3turn);
-      content: '';
-    }
   }
 }
 
@@ -84,9 +65,9 @@
 
   .intro-title {
     background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 
     h2 {
@@ -98,11 +79,11 @@
       width: 53vw;
     }
   }
-  .intro-text {
-    width: 100%;
-    padding: 4vw 6vw;
-    background-color: #ffffff;
 
+  .intro-text {
+    background-color: #ffffff;
+    padding: 4vw 6vw;
+    width: 100%;
 
     p {
       color: @dark-secondary-color;
@@ -111,17 +92,7 @@
     }
   }
 }
-@media screen and (min-width: 33em) {
-  .intro {
-    .intro-title {
-      // background-size: contain;
-      h2 {
-        // .font-size(23);
-        // width: 62vw;
-      }
-    }
-  }
-}
+
 @media screen and (min-width: @tablet-break) {
   .intro {
     .intro-title {
@@ -148,9 +119,9 @@
 @media screen and (min-width: @desktop-break) {
   .intro {
     background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
-    background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: contain;
 
     .intro-title {
       background-image: none;
@@ -182,11 +153,9 @@
 
 @media screen and (min-width: @large-desktop-break) {
   .intro {
-
     background-size: contain;
 
     .intro-title {
-
       h2 {
         .font-size(64);
           width: 60vw;
@@ -203,7 +172,4 @@
     }
   }
 }
-@media screen and (min-width: @large-desktop-break) {
 
-
-}

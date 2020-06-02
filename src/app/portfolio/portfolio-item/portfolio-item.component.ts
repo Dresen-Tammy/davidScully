@@ -1,5 +1,5 @@
-import { Project } from './../../models/project';
 import { Component, OnInit, Input } from '@angular/core';
+import { Project } from './../../models/project';
 
 @Component({
   selector: 'app-portfolio-item',

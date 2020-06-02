@@ -8,9 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PortfolioSectionComponent implements OnInit {
   @Input() public portfolio: Job; // name of portfolio section
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  public constructor() { }
+
+  public ngOnInit(): void {}
 
 }

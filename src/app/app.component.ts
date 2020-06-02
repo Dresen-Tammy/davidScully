@@ -1,7 +1,5 @@
-import { menuAnimation } from './animations';
 import { Component } from '@angular/core';
-import { Subject } from 'rxjs';
-
+import { menuAnimation } from './animations';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +8,7 @@ import { Subject } from 'rxjs';
   animations: [menuAnimation]
 })
 export class AppComponent {
-  title = 'daviddresen';
+  public title = 'daviddresen';
   public navigation: {} = [
     {
       title: 'work',
@@ -29,9 +27,11 @@ export class AppComponent {
   public openValue: string = 'close';
 
   public toggleOpen(): void {
+
     if (this.opened) {
       this.opened = false;
       this.openValue = 'close';
+
     } else {
       this.opened = true;
       this.openValue = 'open';
@@ -46,6 +46,5 @@ export class AppComponent {
   }
 
   private openNav(): void {
-
   }
 }

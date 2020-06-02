@@ -3,9 +3,11 @@
 app-portfolio-item {
   box-shadow: 0px 4px 24px #6F6F6F1A;
 }
+
 .light-section {
   background: @light-secondary-color;
   color: @dark-secondary-color;
+
   p {
     color: @dark-secondary-color;
   }
@@ -14,70 +16,80 @@ app-portfolio-item {
 .dark-section, .logo-section {
   background: @dark-secondary-color;
   color: @light-secondary-color;
+
   p {
     color: @light-secondary-color;
   }
 }
+
 section {
   padding: 2.75rem 1.875rem;
+
   h3 {
     display: none;
   }
+
   h4 {
     .font-size(26);
     .rem-px(margin-bottom, 24);
   }
+
   p {
     .font-size(18);
     .rem-px(margin-bottom, 67);
   }
+
   @media screen and (min-width: @tablet-break) {
     h4 {
      .font-size(30);
     }
+
     p {
       .font-size(24);
       .rem-px(margin-bottom, 125);
     }
   }
+
   @media screen and (min-width: @desktop-break) {
+    .rem-px(padding-bottom, 115);
+
     .textbox {
-      .rem-px(width, 876);
       margin: auto auto;
       .rem-px(margin-top, 33);
+      .rem-px(width, 876);
     }
+
     h3 {
       display: initial;
-      .font-size(12);
-
       font-family: "Rubic", sans-serif;
-
+      .font-size(12);
     }
+
     h4 {
       .font-size(36);
-      .rem-px(margin-top, 25);
       .rem-px(line-height, 48);
+      .rem-px(margin-top, 25);
     }
+
     p {
       .rem-px(margin-bottom, 63);
     }
-    .rem-px(padding-bottom, 115);
   }
 }
-
 
 .gallery {
   display: grid;
   .rem-px(gap, 67);
-  @media screen and (min-width: @tablet-break) {
-    grid-template-columns: 1fr 1fr;
-    gap: 3.125rem 3.75rem;
-  }
-  @media screen and (min-width: @desktop-break) {
 
-    margin: 0 5%;
+  @media screen and (min-width: @tablet-break) {
+    gap: 3.125rem 3.75rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: @desktop-break) {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
+    margin: 0 5%;
     .rem-px(padding-bottom, 147);
   }
 
@@ -85,27 +97,28 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 3.125rem 3.75rem;
   }
-  @media screen and (min-width: @desktop-break) {
 
-    margin: 0 5%;
+  @media screen and (min-width: @desktop-break) {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    margin: 0 5%;
     .rem-px(padding-bottom, 147);
   }
+
   @media screen and (min-width: 95rem) {
-   // grid-template-columns: 25rem 25rem 25rem;
-    margin: 0 6.25rem;
     gap: 4rem 4.5rem;
     grid-template-columns: 22rem 22rem 22rem;
+    margin: 0 6.25rem;
   }
+
   @media screen and (min-width: 101rem) {
-    // grid-template-columns: 25rem 25rem 25rem;
-     margin: 0 7.25rem;
-     gap: 5rem 5.5rem;
-     grid-template-columns: 25rem 25rem 25rem;
+    gap: 5rem 5.5rem;
+    grid-template-columns: 25rem 25rem 25rem;
+    margin: 0 7.25rem;
    }
+
   @media screen and (min-width: 120rem) {
-    margin: 0 10%;
     gap: 9.1875rem 9.625rem;
+    margin: 0 10%;
   }
 }
