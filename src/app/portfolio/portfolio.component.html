@@ -1,12 +1,7 @@
-<section [class]="portfolio">
-  <h3>{{h3}}</h3>
-  <h4>{{h4}}</h4>
-  <p>{{text}}</p>
-  <div class="gallery">
-    <app-portfolio-item
-      *ngFor="let item of items"
-      [project]="item"
-    ></app-portfolio-item>
-  </div>
-</section>
+<app-portfolio-section
+  *ngFor="let item of list"
+  [class]="item.class"
+  [portfolio]="item"
+></app-portfolio-section>
+
 

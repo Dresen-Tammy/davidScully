@@ -1,0 +1,13 @@
+<section [class]="portfolio.class">
+  <div class="textbox">
+    <h3>{{portfolio.h3}}</h3>
+    <h4>{{portfolio.h4}}</h4>
+    <p>{{portfolio.text}}</p>
+  </div>
+  <div class="gallery">
+    <app-portfolio-item
+      *ngFor="let item of portfolio.projects"
+      [project]="item"
+    ></app-portfolio-item>
+  </div>
+</section>

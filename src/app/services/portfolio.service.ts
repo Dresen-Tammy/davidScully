@@ -1,16 +1,30 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PortfolioService extends OnInit {
+export class PortfolioService {
 
-  public constructor() { }
+  public constructor() {
+    // create default project
+    // create default portfolio
+    // create observables Portfolios
+    // create observable Category
+   }
 
-  public ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+   // get portfolio
+    // api call to get
 
-  }
 }
 
+// portfolio
+  // category
+    // header
+      // h3 title
+      // h4 blurb
+      // p text
+    // body
+      // img
+        // title
+        // src
+        // link

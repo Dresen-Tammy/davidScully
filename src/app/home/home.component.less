@@ -10,27 +10,37 @@
     margin-left: -1vw;
     line-height: 1;
     .rem-px(padding-top, 200);
-
+    @media screen and (min-width: @tablet-break) {
+      font-size: 29vw
+    }
     @media screen and (min-width: @desktop-break) {
       .rem-px(padding-top, 227);
+      font-size: 25vw;
     }
   }
 
   p {
     color: @light-color;
-    .font-size(16);
+    font-size: 4.5vw;
+    font-weight: 300;
     .rem-px(margin-top, 2);
+    .rem-px(margin-bottom, 64);
     padding-left: 30vw;
     .rem-px(padding-right, 30);
-    width: 100vw;
+    width: 90vw;
 
     @media screen and (min-width: @tablet-break) {
-      .font-size(22);
-      .rem-px(margin-top, -19);
+      font-size: 4vw;
+      margin-top: 4vw;
+      padding-left: 33.3vw;
+      padding-right: 0;
     }
 
     @media screen and (min-width: @desktop-break) {
       .rem-px(padding-bottom, 42);
+      padding-left: 28.3vw;
+      font-size: 1.65vw;
+      margin-top: -2vw;
     }
   }
   .arrow {
@@ -73,57 +83,72 @@
   color: @light-secondary-color;
 
   .intro-title {
+    background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: cover;
     width: 100%;
 
     h2 {
-      .font-size(18);
-      .rem-px(padding-bottom, 100);
-      padding-left: @pad-mobile;
-      padding-top: @pad-mobile;
+      font-size: 4.4vw;
+      padding-bottom: 27vw;
+      padding-left: 7.7vw;
+      padding-top: 7vw;
       .rem-px(min-width, 220);
-      width: 45vw;
+      width: 53vw;
     }
   }
   .intro-text {
     width: 100%;
-    padding: @pad-mobile;
-    background-color: @light-color;
+    padding: 4vw 6vw;
+    background-color: #ffffff;
+
 
     p {
       color: @dark-secondary-color;
+      font-size: 4vw;
+      font-weight: 300;
     }
   }
 }
-
+@media screen and (min-width: 33em) {
+  .intro {
+    .intro-title {
+      // background-size: contain;
+      h2 {
+        // .font-size(23);
+        // width: 62vw;
+      }
+    }
+  }
+}
 @media screen and (min-width: @tablet-break) {
   .intro {
     .intro-title {
-      background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
-      background-position: top right;
-      background-repeat: no-repeat;
       background-size: cover;
 
       h2 {
-        padding-left: @pad-tablet;
-        padding-top: @pad-tablet;
-        .font-size(32);
-        width: 45vw;
+        padding-left: 5.4vw;
+        padding-top: 5.9vw;
+        font-size: 4.35vw;
+        width: 49vw;
       }
     }
 
     .intro-text {
-      padding: @pad-tablet;
+      padding: 5.9vw 4vw 5.9vw 7vw;
 
       p {
-        .font-size(26);
+        font-size: 3.1vw;
       }
     }
   }
 }
+
 @media screen and (min-width: @desktop-break) {
   .intro {
     background-image: url('../../assets/images/DavidDresen_splatter_1200x794.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
 
@@ -131,22 +156,25 @@
       background-image: none;
 
       h2 {
-        .font-size(44);
-        padding-left: @pad-desktop-x;
-        padding-top: @pad-desktop-y;
-        width: 60vw;
+        font-size: 3.3vw;
+        line-height: 4.5vw;
+        padding-bottom: 4vw;
+        padding-left: 7vw;
+        padding-top: 7vw;
+        width: 75vw;
       }
     }
 
     .intro-text {
       background-color: transparent;
-      padding: 0 @pad-desktop-x;
+      padding: 0 7vw;
       padding-bottom: @pad-desktop-y;
-      width: 60%;
+      width: 62vw;
 
       p {
         color: @light-color;
-        .font-size(22);
+        font-size: 1.5vw;
+        font-weight: 300;
       }
     }
   }
@@ -174,4 +202,8 @@
       }
     }
   }
+}
+@media screen and (min-width: @large-desktop-break) {
+
+
 }

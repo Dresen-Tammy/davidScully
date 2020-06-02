@@ -11,29 +11,37 @@ ul {
 
   @media screen and (min-width: @tablet-break) {
     display: block;
-    margin-left:30vw;
+    margin-left:33.3vw;
     //.rem-px(margin-left, 354);
     .rem-px(margin-top, 34);
   }
   @media screen and (min-width: @desktop-break) {
-    //.rem-px(margin-left, 606);
+    margin-left: 28.3vw;
     .rem-px(margin-top, 57);
   }
 }
 li {
   display: inline-block;
   color: @light-color;
-  .font-size(22);
-  .rem-px(margin-right, 50);
+  font-size: 3.9vw;
+  margin-right: 5vw;
   font-weight: 300;
-  // @media screen and (min-width: @large-desktop-break) {
-  //   .font-size(30);
-  // }
+  @media screen and (min-width: @desktop-break) {
+   font-size: 1.6vw;
+   margin-right: 3.1vw;
+  }
 }
 
 a, a:link {
+  display: grid;
+    grid-template-columns: 26px 1fr;
+    align-items: center;
+    gap: 1.2vw;
   color: @light-color;
   text-decoration: none;
+  @media screen and (min-width: @desktop-break) {
+    gap: .9vw;
+   }
 }
 
 button {
