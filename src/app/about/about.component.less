@@ -64,14 +64,14 @@ h2 {
   z-index: 10;
   font-size: 8vw;
   line-height: 10vw;
-  .rem-px(padding-left, 30px);
-  .rem-px(padding-top, 30px);
+  .rem-px(padding-left, 30);
+  .rem-px(padding-top, 30);
 
   @media screen and (min-width: @desktop-break) {
     .font-size(80);
-    line-height: 1rem;
-    padding-left: 90px;
-    padding-top: 80px;
+    .rem-px(line-height, 16);
+    .rem-px(padding-left, 90);
+    .rem-px(padding-top, 80);
   }
 }
 
@@ -83,14 +83,14 @@ h2, p, address {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
-  .rem-px(padding, 30px);
+  .rem-px(padding, 30);
 
   @media screen and (min-width: @tablet-break) {
     grid-column-end: 2;
   }
 
   @media screen and (min-width: @desktop-break) {
-    padding-left: 90px;
+    .rem-px(padding-left, 90);
   }
 }
 
@@ -104,7 +104,7 @@ p, address {
 }
 
 p {
-  padding-bottom: 20px;
+  .rem-px(padding-bottom, 20);
 }
 
 address {
