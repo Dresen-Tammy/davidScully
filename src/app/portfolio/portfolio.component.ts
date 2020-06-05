@@ -17,14 +17,14 @@ export class PortfolioComponent implements OnInit {
       projects: [
         {
           id: 'global-0',
-          title: 'Design Print Strategy',
-          src: '../../assets/images/projects/combo-pack-1b-design.png',
+          title: 'Print Design Strategy',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381913/daviddresen/print_design_strategy_cmh4ji.jpg',
           category: 'global-creative'
         },
         {
           id: 'global-1',
           title: 'Print Packaging',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383320/daviddresen/ink_package_624_2_dsk64y.jpg',
           category: 'global-creative'
         },
         {
@@ -36,7 +36,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'global-3',
           title: 'Continuous Print Package',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381885/daviddresen/ink_package_15_sljxae.jpg',
           category: 'global-creative'
         }
       ]
@@ -49,26 +49,56 @@ export class PortfolioComponent implements OnInit {
       projects: [
         {
           id: 'head-0',
-          title: 'Design Print Strategy',
-          src: '../../assets/images/projects/combo-pack-1b-design.png',
+          title: 'Multicolor Ink Package 1',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384198/daviddresen/ink_package_all_colors_dark_eh8nem.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-1',
-          title: 'Print Packaging',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
+          title: 'Multicolor Ink Packaging 2',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384195/daviddresen/ink_package_all_colors_laza9p.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-2',
-          title: 'Multi-Color Print Packaging',
-          src: '../../assets/images/projects/proposal-two.png',
+          title: 'Single Color Print Packaging',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383300/daviddresen/ink_package_1300_g2oaw4.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-3',
-          title: 'Continuous Print Package',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
+          title: '2 Color Print Package',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381890/daviddresen/ink_package_1321_combo_dtkp3p.jpg',
+          category: 'head-creative'
+        },
+        {
+          id: 'head-4',
+          title: 'Mobile UI',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381925/daviddresen/ui_hpSmart_yygt8v.jpg',
+          category: 'head-creative'
+        },
+        {
+          id: 'head-5',
+          title: 'Printer Design',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381881/daviddresen/hp_printer_environment_egffv9.jpg',
+          category: 'head-creative'
+        },
+        {
+          id: 'head-6',
+          title: 'Desktop UI',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381921/daviddresen/ui_hp_instant_morxap.jpg',
+          category: 'head-creative'
+        },
+        {
+          id: 'head-7',
+          title: 'Design System Color Theory',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381875/daviddresen/color_theory_ekbitn.jpg',
+          category: 'head-creative'
+        },
+        {
+          id: 'head-4',
+          title: 'Design System Color Alignment',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381869/daviddresen/color_aligned_n1mmx3.jpg',
           category: 'head-creative'
         }
       ]
@@ -93,12 +123,6 @@ export class PortfolioComponent implements OnInit {
         },
         {
           id: 'glacier-2',
-          title: 'Multi-Color Print Packaging',
-          src: '../../assets/images/projects/narrow-blue3-white-blister.png',
-          category: 'glacier'
-        },
-        {
-          id: 'glacier-3',
           title: 'Continuous Print Package',
           src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
           category: 'glacier'
@@ -113,50 +137,48 @@ export class PortfolioComponent implements OnInit {
       projects: [
         {
           id: 'logoworks-0',
-          title: 'Design Print Strategy',
-          src: '../../assets/images/projects/combo-pack-1b-design.png',
+          title: 'Nestle Candy Packaging',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381908/daviddresen/nestle_zm9faj.jpg',
           category: 'logoworks'
         },
         {
           id: 'logoworks-1',
-          title: 'Print Packaging',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
+          title: 'Website Kingfish',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381929/daviddresen/website_kingfish_dz5p9f.jpg',
           category: 'logoworks'
         },
         {
           id: 'logoworks-2',
-          title: 'Multi-Color Print Packaging',
-          src: '../../assets/images/projects/narrow-blue3-white-blister.png',
+          title: 'Barron Brochure',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384805/daviddresen/brochure_barron_ohlend.jpg',
           category: 'logoworks'
         },
         {
           id: 'logoworks-3',
-          title: 'Continuous Print Package',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
+          title: 'Broughton Brochure',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381793/daviddresen/brochure_broughton_qlsnyu.jpg',
+          category: 'logoworks'
+        },
+        {
+          id: 'logoworks-4',
+          title: 'Structured Investment Brochure',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383293/daviddresen/brochure_structured_investment_tewtck.jpg',
+          category: 'logoworks'
+        },
+        {
+          id: 'logoworks-5',
+          title: 'Tokyo Brochure',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381917/daviddresen/tokyo_tsperj.jpg',
+          category: 'logoworks'
+        },
+        {
+          id: 'logoworks-6',
+          title: 'Honerkamp Brochure',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381796/daviddresen/brochure_honerkamp_ru27kt.jpg',
           category: 'logoworks'
         }
       ]
     }
-  ]
-  public items: Project[] = [
-    {
-      id: '0',
-      title: 'Ink Packaging',
-      src: '../../assets/images/projects/combo-pack-1b-design.png',
-      category: 'global-creative'
-    },
-    {
-      id: '1',
-      title: 'Ink Packaging',
-      src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
-      category: 'global-creative'
-    },
-    {
-      id: '2',
-      title: 'Ink Packaging',
-      src: '../../assets/images/projects/narrow-blue3-white-blister.png',
-      category: 'global-creative'
-    },
   ];
 
   public constructor() { }
