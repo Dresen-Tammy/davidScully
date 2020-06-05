@@ -68,10 +68,12 @@ h2 {
   .rem-px(padding-top, 30);
 
   @media screen and (min-width: @desktop-break) {
-    .font-size(80);
-    .rem-px(line-height, 16);
-    .rem-px(padding-left, 90);
+    .font-size(68);
+    .rem-px(line-height, 68);
+    .rem-px(padding-left, 0);
     .rem-px(padding-top, 80);
+    .rem-px(margin-left, 140);
+    .rem-px(padding-bottom, 30);
   }
 }
 
@@ -90,16 +92,32 @@ h2, p, address {
   }
 
   @media screen and (min-width: @desktop-break) {
-    .rem-px(padding-left, 90);
+    .rem-px(padding, 0);
+    .rem-px(margin-left, 140);
+    width: 80%;
+  }
+  @media screen and (min-width: 90rem) {
+    width: 100%;
+  }
+  @media screen and (min-width: 110rem) {
+    .rem-px(width, 950);
   }
 }
 
 p, address {
   color: @dark-color;
   .font-size(18);
+  font-weight: 300;
 
   @media screen and (min-width: @tablet-break) {
     color: @light-color;
+  }
+
+  @media screen and (min-width: @tablet-break) {
+    .font-size(20);
+  }
+  @media screen and (min-width: 90rem) {
+    .font-size(30);
   }
 }
 

@@ -30,7 +30,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'global-2',
           title: 'Multi-Color Print Packaging',
-          src: '../../assets/images/projects/narrow-blue3-white-blister.png',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383320/daviddresen/ink_package_624_2_dsk64y.jpg',
           category: 'global-creative'
         },
         {
