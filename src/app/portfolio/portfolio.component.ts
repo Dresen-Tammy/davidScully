@@ -110,22 +110,73 @@ export class PortfolioComponent implements OnInit {
       class: "light-section",
       projects: [
         {
-          id: 'glacier-0',
-          title: 'Design Print Strategy',
-          src: '../../assets/images/projects/combo-pack-1b-design.png',
-          category: 'glacier'
+          id: 'head-0',
+          title: 'Multicolor Ink Package 1',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384198/daviddresen/ink_package_all_colors_dark_eh8nem.jpg',
+          category: 'head-creative'
         },
         {
-          id: 'glacier-1',
-          title: 'Print Packaging',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
-          category: 'glacier'
+          id: 'head-1',
+          title: 'Multicolor Ink Packaging 2',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384195/daviddresen/ink_package_all_colors_laza9p.jpg',
+          category: 'head-creative'
         },
         {
-          id: 'glacier-2',
-          title: 'Continuous Print Package',
-          src: '../../assets/images/projects/narrow-allcolors1-white-blister.png',
-          category: 'glacier'
+          id: 'head-2',
+          title: 'Single Color Print Packaging',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383300/daviddresen/ink_package_1300_g2oaw4.jpg',
+          category: 'head-creative'
+        }
+      ],
+      logos: [
+        {
+          id: 'glacier-logo-0',
+          title: 'Fonataine Vineyards',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637201/daviddresen/FontaineBarn_jozimn.jpg',
+          category: 'glacier-logo'
+        },
+        {
+          id: 'glacier-logo-1',
+          title: 'Rockwell Marshals',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637262/daviddresen/Rockwell_eipgwa.jpg',
+          category: 'glacier-logo'
+        },
+        {
+          id: 'glacier-logo-2',
+          title: 'Northwind',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637292/daviddresen/Northwind_qshz6b.jpg',
+          category: 'glacier-logo'
+        },
+        {
+          id: 'glacier-logo-3',
+          title: 'Advanced Health Chiropractic',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637506/daviddresen/advancedHealth_wt99jv.jpg',
+          category: 'glacier-logo'
+        },
+        {
+          id: 'glacier-logo-4',
+          title: 'Sleepy Ridge Golf',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637539/daviddresen/sleepy_zzjkka.jpg',
+          category: 'glacier-logo'
+        },
+        {
+          id: 'glacier-logo-5',
+          title: 'SSP',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637420/daviddresen/SSP_khdrgt.jpg',
+          category: 'glacier-logo'
+        },
+        {
+          id: 'glacier-logo-6',
+          title: 'Rizex',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637568/daviddresen/Risex2_s650pt.jpg',
+          category: 'glacier-logo',
+          award: true
+        },
+        {
+          id: 'glacier-logo-7',
+          title: 'Landspin',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637583/daviddresen/Landspin_tj2xkv.jpg',
+          category: 'glacier-logo'
         }
       ]
     },

@@ -7,7 +7,7 @@
   color: @dark-secondary-color;
 
   app-portfolio-item {
-    box-shadow: 0px 4px 20px #2F34381A;
+    box-shadow: 0px 8px 20px #2F34381A;
   }
 
   p {
@@ -85,46 +85,73 @@ section {
 
 .gallery {
   display: grid;
-  .rem-px(gap, 67);
+  // .rem-px(gap, 67);
+  gap: 2rem;
+}
+  @media screen and (min-width: 25rem) {
+    .logos {
+      margin-top: 2rem;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
 
-  @media screen and (min-width: @tablet-break) {
-    gap: 3.125rem 3.75rem;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (min-width: @desktop-break) {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: stretch;
-    margin: 0 5%;
-    .rem-px(padding-bottom, 147);
   }
 
   @media screen and (min-width: @tablet-break) {
-    grid-template-columns: 1fr 1fr;
-    gap: 3.125rem 3.75rem;
+    .gallery {
+      gap: 3.125rem 3.75rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .logos {
+      margin-top: 3.75rem;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   @media screen and (min-width: @desktop-break) {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    margin: 0 5%;
-    .rem-px(padding-bottom, 147);
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      margin: 0 5%;
+    }
+    .logos {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 3.75rem;
+    }
   }
 
   @media screen and (min-width: 95rem) {
-    gap: 4rem 4.5rem;
-    grid-template-columns: 22rem 22rem 22rem;
-    margin: 0 6.25rem;
+    .gallery {
+      gap: 4rem 4.5rem;
+      grid-template-columns: 22rem 22rem 22rem;
+      margin: 0 6.25rem;
+    }
+    .logos {
+      margin-top: 4.5rem;
+      grid-template-columns: 15.4rem 15.4rem 15.4rem 15.4rem;
+    }
   }
 
   @media screen and (min-width: 101rem) {
-    gap: 5rem 5.5rem;
-    grid-template-columns: 25rem 25rem 25rem;
-    margin: 0 7.25rem;
-   }
+    .gallery {
+      gap: 5rem 5.5rem;
+      grid-template-columns: 25rem 25rem 25rem;
+      margin: 0 7.25rem;
+    }
+    .logos {
+      grid-template-columns: 17.4rem 17.4rem 17.4rem 17.4rem;
+      margin-top: 5.5rem;
+    }
+  }
 
   @media screen and (min-width: 120rem) {
-    gap: 9.1875rem 9.625rem;
-    margin: 0 10%;
+    .gallery {
+      gap: 9.1875rem 9.625rem;
+      margin: 0 10%;
+    }
+    .logos {
+      margin-top: 9.625rem;
+      grid-template-columns: 16.4rem 16.4rem 16.4rem 16.4rem;
+    }
   }
-}

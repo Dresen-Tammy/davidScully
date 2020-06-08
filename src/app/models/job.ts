@@ -5,5 +5,6 @@ export class Job {
   h4: string;
   text: string;
   class: string;
-  projects: Project[];
+  projects?: Project[];
+  logos?: Project[];
 }

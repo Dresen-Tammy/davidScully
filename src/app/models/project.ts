@@ -3,4 +3,5 @@ export class Project {
   title: string;
   src: string;
   category: string;
+  award?: boolean;
 }
