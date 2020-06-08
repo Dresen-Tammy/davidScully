@@ -12,7 +12,7 @@ export class PortfolioComponent implements OnInit {
     {
       h3: "GLOBAL CREATIVE DIRECTOR",
       h4: "Since January 2016, I have been leading all Creative Direction for product and digital design for HP Print.",
-      text: "I have had the opportunity to work with a team of cross-discipline designers, managing all creative, while defining and implementing innovative design strategies and brand solutions, focused on elevating customers' experiences across HP Print.",
+      text: "Working with a team of cross-discipline designers, I manage all creative, while defining and implementing innovative design strategies and brand solutions. Our work is focused on elevating customer experiences across HP Print.",
       class: "light-section",
       projects: [
         {
@@ -43,7 +43,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       h3: "HEAD OF GLOBAL CREATIVE",
-      h4: "I worked with a team of cross-discipline designers, managing all creative, while defining and implementing innovative design strategies and brand solutions, focused on elevating customers' experiences across HP Print. The below work is a sampling of both strategic exploration and in-market solutions.",
+      h4: "From 2010-2015, I led all Creative for product and digital design for HP Print.",
       text: "I worked with a team of cross-discipline designers, managing all creative, while defining and implementing innovative design strategies and brand solutions, focused on elevating customers' experiences across HP Print. The below work is a sampling of both strategic exploration and in-market solutions.",
       class: "dark-section",
       projects: [
@@ -132,7 +132,7 @@ export class PortfolioComponent implements OnInit {
     {
       h3: "SENIOR DESIGNER, DESIGN DIRECTOR",
       h4: "From 2005-2010, I worked as a Senior Designer, and then Design Director at Logoworks, one of the first successful online design companies, that was eventually acquired by Hewlett Packard.",
-      text: "One of the most exhausting and rewarding jobs I have had. I worked side by side with a group of 25+ designers, producing UI and print design solutions across every business landscape from startups to corporations across the globe. Some of our top clients were; Nestle, Hewlett Packard, Costco, American Express, Kinkos, Intuit and the Dubai Chamber of Commerce.",
+      text: "This was one of the most exhausting and rewarding jobs I have had. I worked side by side with a group of 25+ designers, producing UI and print design solutions across every business landscape from startups to corporations across the globe. Some of our top clients included Nestle, Hewlett Packard, Costco, American Express, Kinkos, Intuit and the Dubai Chamber of Commerce.",
       class: "logo-section",
       projects: [
         {

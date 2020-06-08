@@ -1,12 +1,14 @@
 @import "_variables.less";
 
-app-portfolio-item {
-  box-shadow: 0px 4px 24px #6F6F6F1A;
-}
+
 
 .light-section {
   background: @light-secondary-color;
   color: @dark-secondary-color;
+
+  app-portfolio-item {
+    box-shadow: 0px 4px 20px #2F34381A;
+  }
 
   p {
     color: @dark-secondary-color;
@@ -16,6 +18,10 @@ app-portfolio-item {
 .dark-section, .logo-section {
   background: @dark-secondary-color;
   color: @light-secondary-color;
+
+  app-portfolio-item {
+    box-shadow: 0px 8px 20px #1c1c1cb3;
+  }
 
   p {
     color: @light-secondary-color;
