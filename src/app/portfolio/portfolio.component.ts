@@ -8,6 +8,7 @@ import { Job } from '../models/job';
   styleUrls: ['./portfolio.component.less']
 })
 export class PortfolioComponent implements OnInit {
+  public current: Project;
   public list: Job[] = [
     {
       h3: "GLOBAL CREATIVE DIRECTOR",
@@ -202,30 +203,40 @@ export class PortfolioComponent implements OnInit {
           id: 'logoworks-2',
           title: 'Barron Brochure',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384805/daviddresen/brochure_barron_ohlend.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_baron_modal_rhizuz.jpg',
+          description: 'description',
           category: 'logoworks'
         },
         {
           id: 'logoworks-3',
           title: 'Broughton Brochure',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381793/daviddresen/brochure_broughton_qlsnyu.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_broughton_modal_fvcnbu.jpg',
+          description: 'description',
           category: 'logoworks'
         },
         {
           id: 'logoworks-4',
           title: 'Structured Investment Brochure',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383293/daviddresen/brochure_structured_investment_tewtck.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_structured_modal_p142hb.jpg',
+          description: 'Description goes here.',
           category: 'logoworks'
         },
         {
           id: 'logoworks-5',
           title: 'Tokyo Brochure',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381917/daviddresen/tokyo_tsperj.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_tokyo_modal_uxym9r.jpg',
+          description: 'Description goes here.',
           category: 'logoworks'
         },
         {
           id: 'logoworks-6',
           title: 'Honerkamp Brochure',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381796/daviddresen/brochure_honerkamp_ru27kt.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_honerkamp_modal_jzfzjl.jpg',
+          description: 'Description goes here',
           category: 'logoworks'
         }
       ]
@@ -237,5 +248,8 @@ export class PortfolioComponent implements OnInit {
   public ngOnInit(): void {
   }
 
+  public openModal(project: Project) {
+    this.current = project;
+  }
 }
 

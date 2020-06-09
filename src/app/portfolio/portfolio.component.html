@@ -1,7 +1,32 @@
-<app-portfolio-section
+<section
   *ngFor="let item of list"
-  [class]="item.class"
-  [portfolio]="item"
-></app-portfolio-section>
+  [class]="item.class">
+  <div class="textbox">
+    <h3>{{item.h3}}</h3>
+    <h4>{{item.h4}}</h4>
+    <p>{{item.text}}</p>
+  </div>
+  <div *ngIf="item.projects" class="gallery">
+    <div
+      class="project"
+      aria-label="view project"
+      *ngFor="let project of item.projects"
+      (click)="openModal(project)"
+    >
+    <img [src]="project.src" [alt]="project.title" />
+  </div>
+  </div>
+  <div *ngIf="item.logos" class="logos gallery">
+    <div
+      class="logo"
+      *ngFor="let project of item.logos"
+      aria-label="view project"
+      (click)="openModal(project)"
+    >
+    <img [src]="project.src" [alt]="project.title" />
+  </div>
+  </div>
+</section>
+<app-modal [project]="current"></app-modal>
 
 
