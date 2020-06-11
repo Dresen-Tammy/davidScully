@@ -34,25 +34,29 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'global-0',
           title: 'Print Design Strategy',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381913/daviddresen/print_design_strategy_cmh4ji.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890525/daviddresen/Print_design_strategy_exfbsi.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890525/daviddresen/Print_design_strategy_modal_wy7wgz.jpg',
           category: 'global-creative'
         },
         {
           id: 'global-1',
           title: 'Print Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383320/daviddresen/ink_package_624_2_dsk64y.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890907/daviddresen/Proposal_One_s5imkg.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890907/daviddresen/Proposal_One_modal_sdrham.jpg',
           category: 'global-creative'
         },
         {
           id: 'global-2',
           title: 'Multi-Color Print Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383320/daviddresen/ink_package_624_2_dsk64y.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891103/daviddresen/Proposal_Two_wock4h.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891103/daviddresen/Proposal_Two_modal_mv2g1x.jpg',
           category: 'global-creative'
         },
         {
           id: 'global-3',
           title: 'Continuous Print Package',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381885/daviddresen/ink_package_15_sljxae.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891436/daviddresen/Ink_box_udwyzj.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891436/daviddresen/ink_box_modal_xsycwn.jpg',
           category: 'global-creative'
         }
       ]
@@ -67,55 +71,64 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'head-0',
           title: 'Multicolor Ink Package 1',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384198/daviddresen/ink_package_all_colors_dark_eh8nem.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891633/daviddresen/Narrow-new-design-allcolors2_s1ppuo.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891627/daviddresen/Narrow-new-design-allcolors2_modal_adfucg.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-1',
           title: 'Multicolor Ink Packaging 2',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384195/daviddresen/ink_package_all_colors_laza9p.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891853/daviddresen/Narrow-new-design-allcolors1_loud58.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891849/daviddresen/Narrow-new-design-allcolors1_modal_dlmhrc.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-2',
           title: 'Single Color Print Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383300/daviddresen/ink_package_1300_g2oaw4.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892028/daviddresen/Narrow-new-design-blue3_os2gua.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892021/daviddresen/Narrow-new-design-blue3_modal_n29iqb.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-3',
           title: '2 Color Print Package',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381890/daviddresen/ink_package_1321_combo_dtkp3p.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892765/daviddresen/combo-pack-1b_j0xcga.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892765/daviddresen/combo-pack-1b_modal_tqqigr.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-4',
           title: 'Mobile UI',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381925/daviddresen/ui_hpSmart_yygt8v.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892676/daviddresen/HPSmart_ckns8y.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892676/daviddresen/HPSmart_modal_lrbq4q.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-5',
           title: 'Printer Design',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381881/daviddresen/hp_printer_environment_egffv9.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893327/daviddresen/3M_environment_xvjm17.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893327/daviddresen/3M_environment_modal_zphaou.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-6',
           title: 'Desktop UI',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381921/daviddresen/ui_hp_instant_morxap.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892566/daviddresen/desktop-ui_ftahjk.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892566/daviddresen/desktop-ui_modal_onhent.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-7',
           title: 'Design System Color Theory',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381875/daviddresen/color_theory_ekbitn.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893269/daviddresen/Color_Theory_yqfdrb.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893269/daviddresen/Color_Theory_modal_sj5koo.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-4',
           title: 'Design System Color Alignment',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381869/daviddresen/color_aligned_n1mmx3.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892862/daviddresen/Color_Aligned_vbuwtp.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892862/daviddresen/Color_Aligned_modal_u5vkqv.jpg',
           category: 'head-creative'
         }
       ]
@@ -129,21 +142,24 @@ export class PortfolioComponent implements OnInit {
       projects: [
         {
           id: 'glacier-0',
-          title: 'Multicolor Ink Package 1',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384198/daviddresen/ink_package_all_colors_dark_eh8nem.jpg',
-          category: 'head-creative'
+          title: 'Tallman Website',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894218/daviddresen/Tallman_home_e1gi0d.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894218/daviddresen/Tallman_home_modal_ibo25d.jpg',
+          category: 'glacier'
         },
         {
           id: 'glacier-1',
-          title: 'Multicolor Ink Packaging 2',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384195/daviddresen/ink_package_all_colors_laza9p.jpg',
-          category: 'head-creative'
+          title: 'Lawntech Printed Materials',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894206/daviddresen/LawnTech_home_ortmbe.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894206/daviddresen/LawnTech_home_modal_ytjprg.jpg',
+          category: 'glacier'
         },
         {
           id: 'glacier-2',
-          title: 'Single Color Print Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383300/daviddresen/ink_package_1300_g2oaw4.jpg',
-          category: 'head-creative'
+          title: 'Liljenquist Magazine Spreads',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894206/daviddresen/Lillenquist-spreads_Home_a5fjom.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894206/daviddresen/Lillenquist-spreads_Home_modal_artgn2.jpg',
+          category: 'glacier'
         }
       ],
       logos: [
@@ -151,42 +167,49 @@ export class PortfolioComponent implements OnInit {
           id: 'glacier-logo-0',
           title: 'Fonataine Vineyards',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637201/daviddresen/FontaineBarn_jozimn.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895404/daviddresen/fontaine_modal_eiqy7i.jpg',
           category: 'glacier-logo'
         },
         {
           id: 'glacier-logo-1',
           title: 'Rockwell Marshals',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637262/daviddresen/Rockwell_eipgwa.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895436/daviddresen/Rockwell_modal_y0b7a1.jpg',
           category: 'glacier-logo'
         },
         {
           id: 'glacier-logo-2',
           title: 'Northwind',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637292/daviddresen/Northwind_qshz6b.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895424/daviddresen/Northwind_modal_mbflux.jpg',
           category: 'glacier-logo'
         },
         {
           id: 'glacier-logo-3',
           title: 'Advanced Health Chiropractic',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637506/daviddresen/advancedHealth_wt99jv.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895622/daviddresen/Advanced1_modal_max6wb.jpg',
           category: 'glacier-logo'
         },
         {
           id: 'glacier-logo-4',
           title: 'Sleepy Ridge Golf',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637539/daviddresen/sleepy_zzjkka.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894644/daviddresen/SR_w4q1b2.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895487/daviddresen/SR_modal_zxz73f.jpg',
           category: 'glacier-logo'
         },
         {
           id: 'glacier-logo-5',
           title: 'SSP',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637420/daviddresen/SSP_khdrgt.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895493/daviddresen/SSP_modal_vw38op.jpg',
           category: 'glacier-logo'
         },
         {
           id: 'glacier-logo-6',
           title: 'Rizex',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637568/daviddresen/Risex2_s650pt.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895430/daviddresen/Risex_modal_d18gkp.jpg',
           category: 'glacier-logo',
           award: true
         },
@@ -194,6 +217,7 @@ export class PortfolioComponent implements OnInit {
           id: 'glacier-logo-7',
           title: 'Landspin',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637583/daviddresen/Landspin_tj2xkv.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895414/daviddresen/Landspin_modal_i8mkst.jpg',
           category: 'glacier-logo'
         }
       ]
@@ -208,13 +232,15 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-0',
           title: 'Nestle Candy Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381908/daviddresen/nestle_zm9faj.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896365/daviddresen/SnoCaps_bsjxzs.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896365/daviddresen/SnoCaps_modal_hul76s.jpg',
           category: 'logoworks'
         },
         {
           id: 'logoworks-1',
           title: 'Website Kingfish',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381929/daviddresen/website_kingfish_dz5p9f.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591898070/daviddresen/KingFish_thumb_fe2vky.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896401/daviddresen/Kingfish-landing_modal_fikghd.jpg',
           category: 'logoworks'
         },
         {
