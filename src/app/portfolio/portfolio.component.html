@@ -1,32 +1,41 @@
 <section
   *ngFor="let item of list"
-  [class]="item.class">
+  [class]="item.class"
+  [id]="item.id">
   <div class="textbox">
     <h3>{{item.h3}}</h3>
     <h4>{{item.h4}}</h4>
     <p>{{item.text}}</p>
   </div>
   <div *ngIf="item.projects" class="gallery">
-    <div
-      class="project"
+    <img
+      [src]="project.src"
+      [alt]="project.title"
+      [id]="project.id"
       aria-label="view project"
       *ngFor="let project of item.projects"
-      (click)="openModal(project)"
-    >
-    <img [src]="project.src" [alt]="project.title" />
+      class="project"
+      (click)="openModal($event, project)"/>
   </div>
-  </div>
-  <div *ngIf="item.logos" class="logos gallery">
+  <div *ngIf="item.logos" class="logos gallery" >
     <div
-      class="logo"
+      [id]="project.id"
+      class="project"
       *ngFor="let project of item.logos"
       aria-label="view project"
-      (click)="openModal(project)"
-    >
-    <img [src]="project.src" [alt]="project.title" />
+      (click)="openModal($event, project)"
+      >
+      <img [src]="project.src" [alt]="project.title" [id]="project.id"/>
+    </div>
   </div>
-  </div>
+  <app-modal
+    [modalValue]="modalValue"
+    [class]="modalValue"
+    class="app-modal"
+    [project]="current"
+    (closeClicked)="closeModal()"
+  ></app-modal>
 </section>
-<app-modal [project]="current"></app-modal>
+
 
 

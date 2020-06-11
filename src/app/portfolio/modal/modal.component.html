@@ -1,4 +1,22 @@
-<div *ngIf="project" class="modal">
-  <img [src]="project.modalSrc" [alt]="project.title"/>
-  <p>{{project.description}}</p>
+<div
+class="app-modal"
+[class]="modalValue"
+[@modalAnimation]="{value:modalValue}"
+>
+  <div class="overlay" (click)="closeModal()">
+  </div>
+  <div class="modal">
+    <button
+      class="button"
+      (click)="closeModal()"
+      name="close modal"
+      >
+      <i class="material-icons">close</i>
+    </button>
+    <img
+      class="img"
+      [src]="project.modalSrc"
+      [alt]="project.title"
+      />
+  </div>
 </div>

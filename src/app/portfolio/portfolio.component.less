@@ -68,7 +68,7 @@ section {
     .textbox {
       margin: auto auto;
       .rem-px(margin-top, 33);
-      .rem-px(width, 876);
+      .rem-px(width, 929);
     }
 
     h3 {
@@ -91,56 +91,58 @@ section {
 
 .gallery {
   display: grid;
-  // .rem-px(gap, 67);
   gap: 2rem;
 }
+
 .logos {
   margin-top: 2rem;
 }
-  @media screen and (min-width: 25rem) {
-    .logos {
-      margin-top: 2rem;
-      gap: 2rem;
-      grid-template-columns: 1fr 1fr;
-    }
 
+@media screen and (min-width: 25rem) {
+  .logos {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
   }
-  @media screen and (min-width: 34rem) {
-    .gallery {
-      gap: 2rem;
-      grid-template-columns: 1fr 1fr;
-    }
-    .logos {
-      margin-top: 2rem;
-      gap: 2rem;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+}
 
+@media screen and (min-width: 34rem) {
+  .gallery {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
   }
-
-  @media screen and (min-width: @tablet-break) {
-    .gallery {
-      gap: 3.125rem 3.75rem;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .logos {
-      margin-top: 3.75rem;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+  .logos {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
   }
 
-  @media screen and (min-width: @desktop-break) {
-    .gallery {
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-content: center;
-      margin: 0 5%;
-    }
-    .logos {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-top: 3.75rem;
-    }
+}
+
+@media screen and (min-width: @tablet-break) {
+  .gallery {
+    gap: 3.125rem 3.75rem;
+    grid-template-columns: 1fr 1fr;
   }
+
+  .logos {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3.75rem;
+  }
+}
+
+@media screen and (min-width: @desktop-break) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0 5%;
+  }
+
+  .logos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 3.75rem;
+  }
+}
 
   @media screen and (min-width: 95rem) {
     .gallery {
@@ -148,9 +150,10 @@ section {
       grid-template-columns: 22rem 22rem 22rem;
       margin: 0 6.25rem;
     }
+
     .logos {
-      margin-top: 4.5rem;
       grid-template-columns: 15.4rem 15.4rem 15.4rem 15.4rem;
+      margin-top: 4.5rem;
     }
   }
 
@@ -160,6 +163,7 @@ section {
       grid-template-columns: 25rem 25rem 25rem;
       margin: 0 7.25rem;
     }
+
     .logos {
       grid-template-columns: 17.4rem 17.4rem 17.4rem 17.4rem;
       margin-top: 5.5rem;
@@ -172,7 +176,33 @@ section {
       margin: 0 10%;
     }
     .logos {
-      margin-top: 9.625rem;
       grid-template-columns: 16.4rem 16.4rem 16.4rem 16.4rem;
+      margin-top: 9.625rem;
     }
   }
+
+app-modal {
+  display: grid;
+  height: 0;
+  position: fixed;
+  width: 0;
+  z-index: 1000;
+
+}
+
+.app-modal.closed {
+  height: 0%;
+  left: 0%;
+  top: 0%;
+  transition-delay: .5s;
+  transition-property: all;
+  width: 0%;
+}
+
+.app-modal.open {
+  height: 100%;
+  left: 0%;
+  overflow-x: scroll;
+  top: 0%;
+  width: 100%;
+}

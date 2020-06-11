@@ -9,8 +9,23 @@ import { Job } from '../models/job';
 })
 export class PortfolioComponent implements OnInit {
   public current: Project;
+  public modalValue: string = 'closed';
+  private defaultModal = {
+    id: '',
+    title: '',
+    src: '',
+    modalSrc: '',
+    description: '',
+    category: ''
+  };
+  private defaultPosition = {
+    top: '50%',
+    width: '0px',
+    left: '50%'
+  };
   public list: Job[] = [
     {
+      id: "global",
       h3: "GLOBAL CREATIVE DIRECTOR",
       h4: "Since January 2016, I have been leading all Creative Direction for product and digital design for HP Print.",
       text: "Working with a team of cross-discipline designers, I manage all creative, while defining and implementing innovative design strategies and brand solutions. Our work is focused on elevating customer experiences across HP Print.",
@@ -43,6 +58,7 @@ export class PortfolioComponent implements OnInit {
       ]
     },
     {
+      id: 'head',
       h3: "HEAD OF GLOBAL CREATIVE",
       h4: "From 2010-2015, I led all Creative for product and digital design for HP Print.",
       text: "I worked with a team of cross-discipline designers, managing all creative, while defining and implementing innovative design strategies and brand solutions, focused on elevating customers' experiences across HP Print. The below work is a sampling of both strategic exploration and in-market solutions.",
@@ -105,25 +121,26 @@ export class PortfolioComponent implements OnInit {
       ]
     },
     {
+      id: 'glacier',
       h3: "CO-FOUNDER, CREATIVE DIRECTOR",
       h4: "Glacier Marketing is an independent design and marketing studio I co-founded with my brother in 2009.",
       text: "My brother and I started Glacier Marketing as an opportunity to not only work together, but do it in a field we both love. Although most of our clients are located in the North West, we have done work across the U.S., for clients of all sizes. Our focus is on providing user-centric design and marketing solutions that don't make you mortgage your farm to be both competitive and successful.",
       class: "light-section",
       projects: [
         {
-          id: 'head-0',
+          id: 'glacier-0',
           title: 'Multicolor Ink Package 1',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384198/daviddresen/ink_package_all_colors_dark_eh8nem.jpg',
           category: 'head-creative'
         },
         {
-          id: 'head-1',
+          id: 'glacier-1',
           title: 'Multicolor Ink Packaging 2',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384195/daviddresen/ink_package_all_colors_laza9p.jpg',
           category: 'head-creative'
         },
         {
-          id: 'head-2',
+          id: 'glacier-2',
           title: 'Single Color Print Packaging',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383300/daviddresen/ink_package_1300_g2oaw4.jpg',
           category: 'head-creative'
@@ -182,6 +199,7 @@ export class PortfolioComponent implements OnInit {
       ]
     },
     {
+      id: 'logoworks',
       h3: "SENIOR DESIGNER, DESIGN DIRECTOR",
       h4: "From 2005-2010, I worked as a Senior Designer, and then Design Director at Logoworks, one of the first successful online design companies, that was eventually acquired by Hewlett Packard.",
       text: "This was one of the most exhausting and rewarding jobs I have had. I worked side by side with a group of 25+ designers, producing UI and print design solutions across every business landscape from startups to corporations across the globe. Some of our top clients included Nestle, Hewlett Packard, Costco, American Express, Kinkos, Intuit and the Dubai Chamber of Commerce.",
@@ -202,7 +220,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-2',
           title: 'Barron Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591384805/daviddresen/brochure_barron_ohlend.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_barons_zy6s7o.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_baron_modal_rhizuz.jpg',
           description: 'description',
           category: 'logoworks'
@@ -210,7 +228,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-3',
           title: 'Broughton Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381793/daviddresen/brochure_broughton_qlsnyu.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_broughton_sndutt.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_broughton_modal_fvcnbu.jpg',
           description: 'description',
           category: 'logoworks'
@@ -218,7 +236,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-4',
           title: 'Structured Investment Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591383293/daviddresen/brochure_structured_investment_tewtck.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_structured_yht5my.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_structured_modal_p142hb.jpg',
           description: 'Description goes here.',
           category: 'logoworks'
@@ -226,7 +244,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-5',
           title: 'Tokyo Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381917/daviddresen/tokyo_tsperj.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_tokyo_ypsywy.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_tokyo_modal_uxym9r.jpg',
           description: 'Description goes here.',
           category: 'logoworks'
@@ -234,7 +252,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-6',
           title: 'Honerkamp Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591381796/daviddresen/brochure_honerkamp_ru27kt.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_honerkamp_zw9zjl.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_honerkamp_modal_jzfzjl.jpg',
           description: 'Description goes here',
           category: 'logoworks'
@@ -243,13 +261,20 @@ export class PortfolioComponent implements OnInit {
     }
   ];
 
-  public constructor() { }
+  public constructor() {
+    this.current = this.defaultModal;
+  }
 
   public ngOnInit(): void {
   }
 
-  public openModal(project: Project) {
+  public openModal(event: MouseEvent, project: Project) {
     this.current = project;
+    this.modalValue = 'open';
+  }
+
+  public closeModal() {
+    this.modalValue = 'closed';
   }
 }
 

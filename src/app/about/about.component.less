@@ -61,18 +61,18 @@
 h2 {
   grid-column-start: 1;
   grid-row-start: 1;
-  z-index: 10;
   font-size: 8vw;
   line-height: 10vw;
   .rem-px(padding-left, 30);
   .rem-px(padding-top, 30);
+  z-index: 10;
 
   @media screen and (min-width: @desktop-break) {
     .font-size(68);
     .rem-px(line-height, 68);
+    .rem-px(margin-left, 140);
     .rem-px(padding-left, 0);
     .rem-px(padding-top, 80);
-    .rem-px(margin-left, 140);
     .rem-px(padding-bottom, 30);
   }
 }
@@ -92,8 +92,8 @@ h2, p, address {
   }
 
   @media screen and (min-width: @desktop-break) {
-    .rem-px(padding, 0);
     .rem-px(margin-left, 140);
+    .rem-px(padding, 0);
     width: 80%;
   }
   @media screen and (min-width: 90rem) {
@@ -126,6 +126,7 @@ p {
 }
 
 address {
+  color: #508fb1;
   cursor: pointer;
 }
 
