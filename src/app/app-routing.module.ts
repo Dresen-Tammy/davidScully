@@ -7,7 +7,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {
     path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+    loadChildren: () =>
+      import('./contact/contact.module').then(m => m.ContactModule)
   },
   {path: '', component: HomeComponent}
 
