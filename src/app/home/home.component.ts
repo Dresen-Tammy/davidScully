@@ -18,13 +18,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
    }
 
   public ngOnInit(): void {
+    this.getAnchor();
+    if (this.anchor) {
+      setTimeout(() => {
+
+        this.scroll.scrollToAnchor(this.anchor);
+      }, 500);
+    }
   }
 
   public ngAfterViewInit() {
-    this.getAnchor();
-    if (this.anchor) {
-      this.scroll.scrollToAnchor(this.anchor);
-    }
   }
 
   private getAnchor(): void {

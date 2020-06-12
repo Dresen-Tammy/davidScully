@@ -20,22 +20,18 @@ export class MobileNavComponent implements OnInit {
   }
 
   public toggleOpen() {
-    console.log('open');
     this.openNav.emit();
   }
 
   public toggleClose() {
-    console.log('close');
     this.closeNav.emit();
   }
 
   public scrollTo(anchor) {
     if ( ! this.location.path().includes('/home')) {
-      console.log('navigating', this.location.path());
       this.router.navigate(['/home'], {queryParams: { scroll: anchor}});
     } else {
       setTimeout(() => {
-        console.log('scrolling', this.location.path());
         this.scroll.scrollToAnchor(anchor);
       }, 500 );
     }

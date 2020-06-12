@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 import { LoadableModule, matcher } from 'ngx-loadable';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
     LoadableModule.forRoot({moduleConfigs: [
         { name: 'portfolio', loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule), matcher }
       ]
-    })
+    }),
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
