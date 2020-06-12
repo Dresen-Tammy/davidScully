@@ -1,0 +1,96 @@
+@import "_variables.less";
+
+section {
+  background: linear-gradient(.08turn, #28495a, #508fb1);
+  height: 100%;
+  padding: 6.25rem 2.75rem;
+  width: 100%;
+  @media screen and (min-width: @tablet-break) {
+    padding: 10rem 13vw;
+  }
+}
+
+.contact {
+  margin: auto;
+  max-width: 1080px;
+}
+
+.identity {
+  color: white;
+  font-family: "Volkhorn", serif;
+  font-size: 30px;
+  position: absolute;
+  right: 37px;
+  text-decoration: none;
+  top: 20px;
+
+  @media screen and (min-width: @tablet-break) {
+    left: 40px;
+    right: unset;
+    top: 33px;
+  }
+
+  @media screen and (min-width: @desktop-break) {
+    top: 55px;
+    right: unset;
+    left: 138px;
+    font-size: 20px;
+  }
+}
+
+h2 {
+  color: white;
+  .font-size(24);
+
+  @media screen and (min-width: @tablet-break) {
+    .font-size(30);
+  }
+
+  @media screen and (min-width: @desktop-break) {
+    .font-size(36);
+  }
+}
+
+p, address {
+  color: white;
+  display: inline;
+  .font-size(18);
+
+  @media screen and (min-width: 45em) {
+    .font-size(24);
+  }
+
+  @media screen and (min-width: 64em) {
+    font-size: 1.5vw;
+  }
+}
+
+
+.form-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 100px auto;
+  max-width: 750px;
+  padding: 0;
+  position: relative;
+}
+
+form {
+  padding: 10px;
+
+  button,
+  input,
+  textarea {
+    display: block;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 10px;
+    padding: 5px;
+  }
+}
+
+textarea {
+  height: 200px;
+  margin: 10px;
+  padding: 5px;
+  width: 90%;
+}

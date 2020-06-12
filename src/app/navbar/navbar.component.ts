@@ -8,7 +8,6 @@ import { Location, ViewportScroller } from '@angular/common';
   styleUrls: ['./navbar.component.less']
 })
 export class NavbarComponent implements OnInit {
-
   public constructor(
     private location: Location,
     private scroll: ViewportScroller,
