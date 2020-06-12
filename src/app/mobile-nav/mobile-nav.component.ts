@@ -30,7 +30,7 @@ export class MobileNavComponent implements OnInit {
   }
 
   public scrollTo(anchor) {
-    if (this.location.path() !== '/home') {
+    if ( ! this.location.path().includes('/home')) {
       console.log('navigating', this.location.path());
       this.router.navigate(['/home'], {queryParams: { scroll: anchor}});
     } else {

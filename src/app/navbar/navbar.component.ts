@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit {
   }
 
   public scrollTo(anchor) {
-    if (this.location.path() !== '/home') {
+    if ( ! this.location.path().includes('/home')) {
       this.router.navigate(['/home'], {queryParams: { scroll: anchor}});
     } else {
       this.scroll.scrollToAnchor(anchor);
