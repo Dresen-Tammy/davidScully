@@ -1,4 +1,3 @@
-import { ContactComponent } from './contact/contact.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -19,8 +18,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    MobileNavComponent,
-    ContactComponent
+    MobileNavComponent
   ],
   imports: [
     BrowserModule,
