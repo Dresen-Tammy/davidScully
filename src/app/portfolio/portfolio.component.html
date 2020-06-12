@@ -1,14 +1,15 @@
-<section
-  *ngFor="let item of list"
-  [class]="item.class"
-  [id]="item.id">
-  <div class="textbox">
-    <h3>{{item.h3}}</h3>
-    <h4>{{item.h4}}</h4>
-    <p>{{item.text}}</p>
-  </div>
-  <div *ngIf="item.projects" class="gallery">
-    <img
+<div id="work">
+  <section
+    *ngFor="let item of list"
+    [class]="item.class"
+    [id]="item.id">
+    <div class="textbox">
+      <h3>{{item.h3}}</h3>
+      <h4>{{item.h4}}</h4>
+      <p>{{item.text}}</p>
+    </div>
+    <div *ngIf="item.projects" class="gallery">
+      <img
       [src]="project.src"
       [alt]="project.title"
       [id]="project.id"
@@ -16,9 +17,9 @@
       *ngFor="let project of item.projects"
       class="project"
       (click)="openModal($event, project)"/>
-  </div>
-  <div *ngIf="item.logos" class="logos gallery" >
-    <div
+    </div>
+    <div *ngIf="item.logos" class="logos gallery" >
+      <div
       [id]="project.id"
       class="project"
       *ngFor="let project of item.logos"
@@ -29,13 +30,14 @@
     </div>
   </div>
   <app-modal
-    [modalValue]="modalValue"
-    [class]="modalValue"
-    class="app-modal"
-    [project]="current"
-    (closeClicked)="closeModal()"
+  [modalValue]="modalValue"
+  [class]="modalValue"
+  class="app-modal"
+  [project]="current"
+  (closeClicked)="closeModal()"
   ></app-modal>
 </section>
+</div>
 
 
 

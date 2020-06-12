@@ -167,58 +167,58 @@ export class PortfolioComponent implements OnInit {
           id: 'glacier-logo-0',
           title: 'Fonataine Vineyards',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637201/daviddresen/FontaineBarn_jozimn.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895404/daviddresen/fontaine_modal_eiqy7i.jpg',
-          category: 'glacier-logo'
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972102/daviddresen/FontaineBarn_2x_ziacim.jpg',
+          category: 'logo'
         },
         {
           id: 'glacier-logo-1',
           title: 'Rockwell Marshals',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637262/daviddresen/Rockwell_eipgwa.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895436/daviddresen/Rockwell_modal_y0b7a1.jpg',
-          category: 'glacier-logo'
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972059/daviddresen/Rockwell_2x_x3cg5r.jpg',
+          category: 'logo'
         },
         {
           id: 'glacier-logo-2',
           title: 'Northwind',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637292/daviddresen/Northwind_qshz6b.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895424/daviddresen/Northwind_modal_mbflux.jpg',
-          category: 'glacier-logo'
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972076/daviddresen/Northwind_2x_h1yrzt.jpg',
+          category: 'logo'
         },
         {
           id: 'glacier-logo-3',
           title: 'Advanced Health Chiropractic',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637506/daviddresen/advancedHealth_wt99jv.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895622/daviddresen/Advanced1_modal_max6wb.jpg',
-          category: 'glacier-logo'
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972021/daviddresen/Advanced1_2x_kz1ppv.jpg',
+          category: 'logo'
         },
         {
           id: 'glacier-logo-4',
           title: 'Sleepy Ridge Golf',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894644/daviddresen/SR_w4q1b2.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895487/daviddresen/SR_modal_zxz73f.jpg',
-          category: 'glacier-logo'
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972047/daviddresen/SR_2x_tvtla3.jpg',
+          category: 'logo'
         },
         {
           id: 'glacier-logo-5',
           title: 'SSP',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637420/daviddresen/SSP_khdrgt.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895493/daviddresen/SSP_modal_vw38op.jpg',
-          category: 'glacier-logo'
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972037/daviddresen/SSP_2x_ywl8wl.jpg',
+          category: 'logo'
         },
         {
           id: 'glacier-logo-6',
           title: 'Rizex',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637568/daviddresen/Risex2_s650pt.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895430/daviddresen/Risex_modal_d18gkp.jpg',
-          category: 'glacier-logo',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972065/daviddresen/Risex2_2x_ldlufv.jpg',
+          category: 'logo',
           award: true
         },
         {
           id: 'glacier-logo-7',
           title: 'Landspin',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637583/daviddresen/Landspin_tj2xkv.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591895414/daviddresen/Landspin_modal_i8mkst.jpg',
-          category: 'glacier-logo'
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972091/daviddresen/Landspin_2x_t1bhmo.jpg',
+          category: 'logo'
         }
       ]
     },
@@ -296,7 +296,11 @@ export class PortfolioComponent implements OnInit {
 
   public openModal(event: MouseEvent, project: Project) {
     this.current = project;
-    this.modalValue = 'open';
+    if (this.current.category === 'logo') {
+      this.modalValue = 'openlogo';
+    } else {
+      this.modalValue = 'open';
+    }
   }
 
   public closeModal() {

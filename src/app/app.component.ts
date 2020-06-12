@@ -27,11 +27,9 @@ export class AppComponent {
   public openValue: string = 'close';
 
   public toggleOpen(): void {
-
     if (this.opened) {
       this.opened = false;
       this.openValue = 'close';
-
     } else {
       this.opened = true;
       this.openValue = 'open';
@@ -43,8 +41,5 @@ export class AppComponent {
       this.opened = false;
       this.openValue = 'close';
     }
-  }
-
-  private openNav(): void {
   }
 }
