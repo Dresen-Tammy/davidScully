@@ -4,5 +4,6 @@ export const config: ScullyConfig = {
   projectName: "daviddresen",
   outDir: './dist/static',
   routes: {
-  }
+  },
+  extraRoutes: ['/contact']
 };
