@@ -210,15 +210,15 @@ export class PortfolioComponent implements OnInit {
           title: 'Rizex',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637568/daviddresen/Risex2_s650pt.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972065/daviddresen/Risex2_2x_ldlufv.jpg',
-          category: 'logo',
-          award: true
+          category: 'logo'
         },
         {
           id: 'glacier-logo-7',
           title: 'Landspin',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637583/daviddresen/Landspin_tj2xkv.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972091/daviddresen/Landspin_2x_t1bhmo.jpg',
-          category: 'logo'
+          category: 'logo',
+          award: true
         }
       ]
     },
@@ -249,7 +249,8 @@ export class PortfolioComponent implements OnInit {
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_barons_zy6s7o.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_baron_modal_rhizuz.jpg',
           description: 'description',
-          category: 'logoworks'
+          category: 'logoworks',
+          award: true
         },
         {
           id: 'logoworks-3',
@@ -273,7 +274,8 @@ export class PortfolioComponent implements OnInit {
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_tokyo_ypsywy.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_tokyo_modal_uxym9r.jpg',
           description: 'Description goes here.',
-          category: 'logoworks'
+          category: 'logoworks',
+          award: true
         },
         {
           id: 'logoworks-6',
@@ -281,8 +283,101 @@ export class PortfolioComponent implements OnInit {
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_honerkamp_zw9zjl.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_honerkamp_modal_jzfzjl.jpg',
           description: 'Description goes here',
-          category: 'logoworks'
+          category: 'logoworks',
+          award: true
         }
+      ],
+      logos: [
+        {
+          id: 'logoworks-logo-0',
+          title: 'Northpoint Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067577/daviddresen/Northpoint_wxhlrn.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067577/daviddresen/Northpoint_2x_xguzwg.jpg',
+          category: 'logo',
+          award: true
+        },
+        {
+          id: 'logoworks-logo-1',
+          title: 'Greybeard Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067585/daviddresen/Graybeard_lradgu.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067585/daviddresen/Graybeard_2x_kftdxx.jpg',
+          category: 'logo',
+          award: true
+        },
+        {
+          id: 'logoworks-logo-2',
+          title: 'Athena Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067592/daviddresen/Athena_yoddyp.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067592/daviddresen/Athena_2x_sdodqb.jpg',
+          category: 'logo',
+          award: true
+        },
+        {
+          id: 'logoworks-logo-3',
+          title: 'Karaiya Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067635/daviddresen/Karaiya_rjtwtd.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067635/daviddresen/Karaiya_2x_sk2z4d.jpg',
+          category: 'logo',
+          award: true
+        },
+        {
+          id: 'logoworks-logo-4',
+          title: '49 North Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592070742/daviddresen/fortynine_y4gkxj.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068060/daviddresen/fortynine_2x_xpxnnf.jpg',
+          category: 'logo',
+          award: true
+        },
+        {
+          id: 'logoworks-logo-5',
+          title: 'Ufandi Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067655/daviddresen/Ufandi_hntzpg.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067655/daviddresen/Ufandi_2x_gonbxo.jpg',
+          category: 'logo',
+          award: true
+        },
+        {
+          id: 'logoworks-logo-6',
+          title: 'Golden Tigers Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067660/daviddresen/Tigers_l1v0g7.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067660/daviddresen/Tigers_2x_s4ojp6.jpg',
+          category: 'logo'
+        },
+        {
+          id: 'logoworks-logo-7',
+          title: 'Pickled Egg Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068099/daviddresen/PIckledEgg_gbptvk.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068100/daviddresen/PIckledEgg_2x_vzizq8.jpg',
+          category: 'logo'
+        },
+        {
+          id: 'logoworks-logo-8',
+          title: 'US Figure Skating Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068111/daviddresen/SLC_l87cco.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068112/daviddresen/SLC_2x_ne2gjn.jpg',
+          category: 'logo'
+        },
+        {
+          id: 'logoworks-logo-9',
+          title: 'Main Street Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068120/daviddresen/Mainstreet_wbeljj.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068120/daviddresen/Mainstreet_2x_jfxco6.jpg',
+          category: 'logo'
+        },
+        {
+          id: 'logoworks-logo-10',
+          title: 'Fathom Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068129/daviddresen/Fathom_tdjoc1.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068129/daviddresen/Fathom_2x_ui2miq.jpg',
+          category: 'logo'
+        },
+        {
+          id: 'logoworks-logo-11',
+          title: 'LegalZoom Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068139/daviddresen/LegalZoom_zvlmut.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592068139/daviddresen/LegalZoom_2x_khcdfh.jpg',
+          category: 'logo'
+        },
       ]
     }
   ];

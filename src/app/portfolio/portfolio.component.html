@@ -8,25 +8,43 @@
       <h4>{{item.h4}}</h4>
       <p>{{item.text}}</p>
     </div>
-    <div *ngIf="item.projects" class="gallery">
-      <img
-      [src]="project.src"
-      [alt]="project.title"
-      [id]="project.id"
-      aria-label="view project"
-      *ngFor="let project of item.projects"
-      class="project"
-      (click)="openModal($event, project)"/>
+    <div *ngIf="item.projects" class="misc gallery">
+      <div
+        class="project"
+        [class.winner]="project.award"
+        *ngFor="let project of item.projects"
+        aria-label="view project"
+        (click)="openModal($event, project)"
+        >
+        <img
+          [src]="project.src"
+          [alt]="project.title"
+          [id]="project.id"
+        />
+        <div class="award" *ngIf="project.award">
+          <img class="banner" src="../../assets/images/banner.png" alt="banner">
+          <p>AWARD WINNER</p>
+        </div>
+      </div>
     </div>
     <div *ngIf="item.logos" class="logos gallery" >
       <div
       [id]="project.id"
       class="project"
+      [class.winner]="project.award"
       *ngFor="let project of item.logos"
       aria-label="view project"
       (click)="openModal($event, project)"
       >
-      <img [src]="project.src" [alt]="project.title" [id]="project.id"/>
+      <img
+        [src]="project.src"
+        [alt]="project.title"
+        [id]="project.id"
+        />
+      <div class="award" *ngIf="project.award">
+        <img class="banner" src="../../assets/images/banner.png" alt="banner">
+        <p>AWARD WINNER</p>
+      </div>
     </div>
   </div>
   <app-modal

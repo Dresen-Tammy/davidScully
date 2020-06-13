@@ -99,11 +99,53 @@ section {
   margin-top: 2rem;
 }
 
+.winner {
+  position: relative;
+}
+
+.award {
+  width: 70%;
+  margin-left: 34%;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 3vw;
+  grid-template-rows: 1fr;
+  position: absolute;
+  top: 5%;
+
+  .banner {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  p {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    color: white;
+    line-height: 2em;
+    margin-bottom: 0;
+    font-size: 6vw;
+    justify-self: center;
+  }
+}
+
+
 @media screen and (min-width: 25rem) {
   .logos {
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
+  }
+
+  .award p {
+    font-size: 3vw;
+    line-height: 1.8em;
+  }
+
+  .misc .award {
+    width: 31.6%;
+    margin-left: 70%;
+
   }
 }
 
@@ -116,6 +158,18 @@ section {
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2rem;
+  }
+
+  .award {
+    top: 7%;
+    p {
+      font-size: 2vw;
+    }
+  }
+
+  .misc .award {
+    width: 44%;
+    margin-left: 59%;
   }
 
 }
@@ -143,6 +197,17 @@ section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 3.75rem;
   }
+
+  .misc .award {
+    width: 49%;
+    margin-left: 54%;
+  }
+
+  .award {
+    p {
+      font-size: 1.3vw;
+    }
+  }
 }
 
   @media screen and (min-width: 95rem) {
@@ -168,6 +233,13 @@ section {
     .logos {
       grid-template-columns: 17.4rem 17.4rem 17.4rem 17.4rem;
       margin-top: 5.5rem;
+    }
+
+    .award {
+      p {
+        .font-size(22);
+        line-height: 1.8em;
+      }
     }
   }
 

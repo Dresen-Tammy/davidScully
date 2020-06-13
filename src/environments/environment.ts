@@ -18,5 +18,5 @@ export const environment = {
 /* Todo:
   separate mobil-nav-bar
   create contact page
-  add scully
+  award violator
 */
