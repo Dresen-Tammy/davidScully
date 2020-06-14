@@ -38,7 +38,7 @@ class="nav-behind"
       #routerLinkActiveInstance="routerLinkActive"
       [attr.tabindex]="routerLinkActiveInstance.isActive"
       [class.list-item-active]="routerLinkActiveInstance.isActive"
-      routerLink='contact'
+      (click)="scrollTo('contact')"
       class="list-item"
       >
       <img class="nav-icon" src="https://res.cloudinary.com/dbgufprxr/image/upload/v1591381392/daviddresen/envelope_wm7qqw.svg" alt="contact">

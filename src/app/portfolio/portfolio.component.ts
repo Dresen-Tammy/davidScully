@@ -34,29 +34,50 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'global-0',
           title: 'Print Design Strategy',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890525/daviddresen/Print_design_strategy_exfbsi.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890525/daviddresen/Print_design_strategy_modal_wy7wgz.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/ecosystem_w34wsq.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/ecosystem_modal_yhbua7.jpg',
           category: 'global-creative'
         },
         {
           id: 'global-1',
-          title: 'Print Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890907/daviddresen/Proposal_One_s5imkg.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591890907/daviddresen/Proposal_One_modal_sdrham.jpg',
+          title: 'Tango Printer',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/tango-1_vhgiol.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/tango_modal_tqmhtc.jpg',
           category: 'global-creative'
         },
         {
           id: 'global-2',
-          title: 'Multi-Color Print Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891103/daviddresen/Proposal_Two_wock4h.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891103/daviddresen/Proposal_Two_modal_mv2g1x.jpg',
+          title: 'Printer UI',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/printer_yjov9f.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/printer_2x_qgeosk.jpg',
           category: 'global-creative'
         },
         {
           id: 'global-3',
+          title: 'Multi-Color Print Packaging',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/ink-wide-1_ubq3ve.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153195/daviddresen/ink-wide-1_modal_paogj5.jpg',
+          category: 'global-creative'
+        },
+        {
+          id: 'global-4',
+          title: 'Multi-Color Print Packaging',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153195/daviddresen/ink-wide-2_hzqt5c.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153195/daviddresen/ink-wide-2_modal_i7ggot.jpg',
+          category: 'global-creative'
+        },
+        {
+          id: 'global-5',
           title: 'Continuous Print Package',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891436/daviddresen/Ink_box_udwyzj.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891436/daviddresen/ink_box_modal_xsycwn.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/ink-large_cmetmm.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/ink-large_modal_pxtudr.jpg',
+          category: 'global-creative'
+        },
+        {
+          id: 'global-6',
+          title: 'Light Mode/Dark Mode UI',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/light-dark_cyy8ys.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/light_dark-modal_rhbpib.jpg',
           category: 'global-creative'
         }
       ]
@@ -65,70 +86,63 @@ export class PortfolioComponent implements OnInit {
       id: 'head',
       h3: "HEAD OF GLOBAL CREATIVE",
       h4: "From 2010-2015, I led all Creative for product and digital design for HP Print.",
-      text: "I worked with a team of cross-discipline designers, managing all creative, while defining and implementing innovative design strategies and brand solutions, focused on elevating customers' experiences across HP Print. The below work is a sampling of both strategic exploration and in-market solutions.",
+      text: "I worked with a team of cross-discipline designers, managing all creative, defining and implementing innovative design strategies and brand solutions, and focusing on elevating customers' experiences across HP Print. Here is a sampling of both strategic exploration and in-market solutions.",
       class: "dark-section",
       projects: [
         {
           id: 'head-0',
           title: 'Multicolor Ink Package 1',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891633/daviddresen/Narrow-new-design-allcolors2_s1ppuo.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891627/daviddresen/Narrow-new-design-allcolors2_modal_adfucg.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/white-ink_kafwx8.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/white-ink-modal_wzkrhi.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-1',
           title: 'Multicolor Ink Packaging 2',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891853/daviddresen/Narrow-new-design-allcolors1_loud58.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591891849/daviddresen/Narrow-new-design-allcolors1_modal_dlmhrc.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/ink-light_bbdk3u.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/ink-light_modal_zcaauz.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-2',
           title: 'Single Color Print Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892028/daviddresen/Narrow-new-design-blue3_os2gua.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892021/daviddresen/Narrow-new-design-blue3_modal_n29iqb.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/ink-double_s725mq.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/ink-double-modal_d5a4qx.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-3',
           title: '2 Color Print Package',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892765/daviddresen/combo-pack-1b_j0xcga.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892765/daviddresen/combo-pack-1b_modal_tqqigr.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/ink-duo_tff3t2.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/ink-duo_modal_hkpqid.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-4',
           title: 'Mobile UI',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892676/daviddresen/HPSmart_ckns8y.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892676/daviddresen/HPSmart_modal_lrbq4q.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/HPSmart_1x_kn5evs.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/HPSmart_2_56x_bkjeaz.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-5',
-          title: 'Printer Design',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893327/daviddresen/3M_environment_xvjm17.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893327/daviddresen/3M_environment_modal_zphaou.jpg',
+          title: 'Desktop UI',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/smart-ui_hhdvin.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/smart-ui_modal_nqgzu1.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-6',
           title: 'Desktop UI',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892566/daviddresen/desktop-ui_ftahjk.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892566/daviddresen/desktop-ui_modal_onhent.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592154361/daviddresen/lifesaver_kwbk3s.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592154361/daviddresen/lifesaver_modal_mpjcqr.jpg',
           category: 'head-creative'
         },
         {
           id: 'head-7',
           title: 'Design System Color Theory',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893269/daviddresen/Color_Theory_yqfdrb.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591893269/daviddresen/Color_Theory_modal_sj5koo.jpg',
-          category: 'head-creative'
-        },
-        {
-          id: 'head-4',
-          title: 'Design System Color Alignment',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892862/daviddresen/Color_Aligned_vbuwtp.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591892862/daviddresen/Color_Aligned_modal_u5vkqv.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/hp-color-theory_p7mtob.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/ink-color-theory_modal_vkmwpq.jpg',
           category: 'head-creative'
         }
       ]
@@ -137,13 +151,13 @@ export class PortfolioComponent implements OnInit {
       id: 'glacier',
       h3: "CO-FOUNDER, CREATIVE DIRECTOR",
       h4: "Glacier Marketing is an independent design and marketing studio I co-founded with my brother in 2009.",
-      text: "My brother and I started Glacier Marketing as an opportunity to not only work together, but do it in a field we both love. Although most of our clients are located in the North West, we have done work across the U.S., for clients of all sizes. Our focus is on providing user-centric design and marketing solutions that don't make you mortgage your farm to be both competitive and successful.",
+      text: "My brother and I started Glacier Marketing as an opportunity to work together in a field we both love. Although most of our clients are located in the North West, we have done work across the U.S. for clients of all sizes. We focus on providing user-centric design and marketing solutions at a great price that are both competitive and successful.",
       class: "light-section",
       projects: [
         {
           id: 'glacier-0',
           title: 'Tallman Website',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894218/daviddresen/Tallman_home_e1gi0d.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592155516/daviddresen/Tallman_home_vdi1oz.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591894218/daviddresen/Tallman_home_modal_ibo25d.jpg',
           category: 'glacier'
         },
@@ -225,29 +239,29 @@ export class PortfolioComponent implements OnInit {
     {
       id: 'logoworks',
       h3: "SENIOR DESIGNER, DESIGN DIRECTOR",
-      h4: "From 2005-2010, I worked as a Senior Designer, and then Design Director at Logoworks, one of the first successful online design companies, that was eventually acquired by Hewlett Packard.",
-      text: "This was one of the most exhausting and rewarding jobs I have had. I worked side by side with a group of 25+ designers, producing UI and print design solutions across every business landscape from startups to corporations across the globe. Some of our top clients included Nestle, Hewlett Packard, Costco, American Express, Kinkos, Intuit and the Dubai Chamber of Commerce.",
+      h4: "From 2005-2010, I worked as a Senior Designer, and then Design Director at Logoworks. One of the first successful online design companies, LogoWorks was eventually acquired by Hewlett Packard.",
+      text: "This job one of the most exhausting and rewarding experiences I have had. Working side by side with a group of 25+ designers, we produced UI and print design solutions across every business landscape from startups to corporations across the globe. Some of our top clients included Nestle, Hewlett Packard, Costco, American Express, Kinkos, Intuit and the Dubai Chamber of Commerce.",
       class: "logo-section",
       projects: [
         {
           id: 'logoworks-0',
           title: 'Nestle Candy Packaging',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896365/daviddresen/SnoCaps_bsjxzs.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896365/daviddresen/SnoCaps_modal_hul76s.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/goobers_eoemrw.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/goobers_modal_fvb6zx.jpg',
           category: 'logoworks'
         },
         {
           id: 'logoworks-1',
           title: 'Website Kingfish',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591898070/daviddresen/KingFish_thumb_fe2vky.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592154710/daviddresen/KingFish_thumb_pxm34l.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896401/daviddresen/Kingfish-landing_modal_fikghd.jpg',
           category: 'logoworks'
         },
         {
           id: 'logoworks-2',
           title: 'Barron Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_barons_zy6s7o.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_baron_modal_rhizuz.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/barron_j42nna.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/barron_modal_dbtehu.jpg',
           description: 'description',
           category: 'logoworks',
           award: true
@@ -255,24 +269,24 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-3',
           title: 'Broughton Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_broughton_sndutt.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_broughton_modal_fvcnbu.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/broughton_c9o2oe.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153191/daviddresen/broughton_modal_y2er5p.jpg',
           description: 'description',
           category: 'logoworks'
         },
         {
           id: 'logoworks-4',
           title: 'Structured Investment Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_structured_yht5my.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_structured_modal_p142hb.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/structured_ynwo8m.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153193/daviddresen/structured_modal_xfymzj.jpg',
           description: 'Description goes here.',
           category: 'logoworks'
         },
         {
           id: 'logoworks-5',
           title: 'Tokyo Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_tokyo_ypsywy.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_tokyo_modal_uxym9r.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/tokyo_s9caan.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153194/daviddresen/tokyo_modal_xjezms.jpg',
           description: 'Description goes here.',
           category: 'logoworks',
           award: true
@@ -280,8 +294,8 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'logoworks-6',
           title: 'Honerkamp Brochure',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_honerkamp_zw9zjl.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591472752/daviddresen/brochure_honerkamp_modal_jzfzjl.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/honerkamp_gske7n.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/honerkamp_modal_xnd2ux.jpg',
           description: 'Description goes here',
           category: 'logoworks',
           award: true

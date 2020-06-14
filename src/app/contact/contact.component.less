@@ -2,48 +2,58 @@
 
 section {
   background: linear-gradient(.08turn, #28495a, #508fb1);
+  background-image: url(https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/logodesktopblue_jd2ws8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
-  padding: 6.25rem 2.75rem;
+  padding: 2.75rem 1.875rem;
   width: 100%;
-  @media screen and (min-width: @tablet-break) {
-    padding: 10rem 13vw;
+  @media screen and (min-width: @desktop-break) {
+    background-image: url(https://res.cloudinary.com/dbgufprxr/image/upload/v1592153192/daviddresen/logodesktop_blue_large_w99nfe.jpg);
   }
 }
 
 .contact {
   margin: auto;
-  max-width: 1080px;
-}
-
-.identity {
-  color: white;
-  font-family: "Volkhorn", serif;
-  font-size: 30px;
-  position: absolute;
-  right: 37px;
-  text-decoration: none;
-  top: 20px;
-
-  @media screen and (min-width: @tablet-break) {
-    left: 40px;
-    right: unset;
-    top: 33px;
-  }
-
   @media screen and (min-width: @desktop-break) {
-    top: 55px;
-    right: unset;
-    left: 138px;
-    font-size: 20px;
+    .rem-px(margin-top, 33);
+    .rem-px(width, 929);
   }
 }
 
-h2 {
-  color: white;
-  .font-size(24);
-
+h3, label {
+  color: @light-color;
+  font-family: "Rubik", sans-serif;
+  .font-size(10);
+  font-weight: 300;
   @media screen and (min-width: @tablet-break) {
-    .font-size(30);
+    .font-size(12);
+  }
+}
+
+h3 {
+  .rem-px(margin-bottom, 24);
+}
+
+h4, address {
+  color: @light-color;
+  .font-size(26);
+  .rem-px(margin-bottom, 24);
+  @media screen and (min-width: @desktop-break) {
+    .font-size(36);
+    .rem-px(line-height, 48);
+    margin-bottom: 3vw;
+    .rem-px(margin-top, 25);
+  }
+}
+
+address {
+  display: inline;
+  .font-size(21);
+  font-style: normal;
+
+  @media screen and (min-width: 25rem) {
+    .font-size(26);
   }
 
   @media screen and (min-width: @desktop-break) {
@@ -51,46 +61,77 @@ h2 {
   }
 }
 
-p, address {
-  color: white;
-  display: inline;
-  .font-size(18);
-
-  @media screen and (min-width: 45em) {
-    .font-size(24);
-  }
-
-  @media screen and (min-width: 64em) {
-    font-size: 1.5vw;
-  }
-}
-
-
-.form-box {
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 100px auto;
-  max-width: 750px;
-  padding: 0;
-  position: relative;
-}
-
 form {
-  padding: 10px;
+  display: grid;
+  .rem-px(max-width, 775px);
+  margin-bottom: 100px;
 
-  button,
+  @media screen and (min-width: @tablet-break) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   input,
   textarea {
+    border: none;
+    box-shadow: 0 8px 20px rga(28, 28, 28, .3);
     display: block;
-    font-size: 15px;
-    line-height: 25px;
-    margin: 10px;
-    padding: 5px;
+    .font-size(15);
+    .rem-px(line-height, 25);
+    margin: .625rem 0 1.875rem;
+    .rem-px(padding, 5);
   }
 }
 
 textarea {
-  height: 200px;
-  margin: 10px;
-  padding: 5px;
-  width: 90%;
+  .rem-px(height, 223);
+  margin: .625rem 0;
+  .rem-px(padding, 5);
+  width: 100%;
+}
+
+button {
+  align-items: center;
+  align-self: right;
+  background-color: #379EBC;
+  border: none;
+  box-shadow: 0 8px 20px rga(28, 28, 28, .3);
+  color: @light-color;
+  display: flex;
+  .rem-px(height, 56px);
+  justify-self: right;
+  .rem-px(padding, 24);
+  .rem-px(width, 171);
+
+  img {
+    width: 28px;
+  }
+
+  span {
+    font-family: "Rubik", sans-serif;
+    .font-size(20);
+    font-weight: 200;
+    .rem-px(line-height, 28px);
+    .rem-px(margin-left, 13px);
+  }
+}
+
+input {
+  .rem-px(height, 56);
+  .rem-px(width, 326);
+  max-width: 100%;
+}
+
+@media screen and (min-width: @tablet-break) {
+  .message-input {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  .email-input, button {
+    justify-self: right;
+  }
+
+  button {
+    grid-column-start: 2;
+  }
 }

@@ -1,13 +1,12 @@
-<section>
+<section id="contact">
   <!-- <a class="identity" routerLink="home" >Dresen</a> -->
   <div class="contact">
-    <h2>Contact David Dresen</h2>
-    <p>If you are in need of a passionate, driven,
+    <h3>LOOKING FORWARD TO HEARING FROM YOU</h3>
+    <h4>If you are in need of a passionate, driven,
       detail-oriented, successful creative director,
-      please reach out by email at </p>
-      <address>contact@daviddresen.com</address>
-      <p> or by filling out the contact form.</p>
-      <div class="form-box">
+      please reach out by email at
+      <address href="mailto:contact@daviddresen.com">contact@daviddresen.com</address>
+      or by filling out the contact form.</h4>
         <form
           name="contact-form"
           class="contact-form"
@@ -15,18 +14,23 @@
           data-netlify="true"
           >
           <input type="hidden" name="form-name" value="contact-form" />
-          <label for="name"> name: </label>
-          <input type="text" name="name" class="input" />
-          <label for="email"> email: </label>
-          <input type="email" name="email" class="input" />
-          <label for="message"> message: </label>
-          <textarea
-          name="message"
-          class="textarea"
-          placeholder="How can I help?"
-          ></textarea>
-          <button type="submit">Submit</button>
+          <div class="name-input">
+            <label for="name">NAME</label>
+            <input type="text" name="name" class="input" required />
+          </div>
+          <div class="email-input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" class="input" required />
+          </div>
+          <div class="message-input">
+            <label for="message">TELL ME HOW WE CAN WORK TOGETHER</label>
+            <textarea
+            name="message"
+            class="textarea"
+            required
+            ></textarea>
+          </div>
+          <button type="submit"><img src="../../assets/images/envelope.svg"/><span>SUBMIT</span></button>
       </form>
-    </div>
   </div>
 </section>
