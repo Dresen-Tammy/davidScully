@@ -11,10 +11,15 @@
           name="contact-form"
           class="contact-form"
           method="POST"
+          netlify-honey-pot="bot-field"
           data-netlify="true"
           [formGroup]="contactForm"
           (ngSubmit)="submitForm()"
+          action="/home"
           >
+          <div class="hidden">
+            <label>Don’t fill this out if you're human: <input name="bot-field" formControlName="botfield" /></label>
+          </div>
           <input type="hidden" name="form-name"  value="contact-form" />
           <div class="name-input">
             <label for="name">NAME</label>
@@ -33,7 +38,7 @@
             required
             ></textarea>
           </div>
-          <button type="submit"><img src="../../assets/images/envelope.svg"/><span>SUBMIT</span></button>
+          <button type="submit" formControlName="button"><img src="../../assets/images/envelope.svg"/><span>SUBMIT</span></button>
       </form>
       <p>{{message}}</p>
   </div>
