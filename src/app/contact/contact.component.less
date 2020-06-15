@@ -106,6 +106,7 @@ button {
   padding: .5rem 1.5rem;
   .rem-px(width, 171);
   border-radius: 2px;
+  border: 1px solid #379EBC;
 
   img {
     width: 28px;
@@ -156,7 +157,18 @@ input {
   font-size: 20px;
 }
 
-input.ng-pristine.ng-invalid.ng-touched {
-  border: 1px solid red;
-  background-color: lightpink;
+.errors {
+  background-color: rgb(224, 178, 185);
+}
+
+.invalid {
+  background-color: transparent;
+  border: .2px solid @light-color;
+  opacity: .6;
+}
+
+.invalid-feedback {
+  margin-top: -28px;
+  display: block;
+  color: rgb(236, 108, 108);
 }
