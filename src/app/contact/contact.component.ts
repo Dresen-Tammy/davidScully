@@ -24,7 +24,7 @@ export class ContactComponent implements OnInit {
 
   public submitForm(e: Event) {
     e.preventDefault();
-    this.openSnackBar('Thanks Tammy  for reaching out. I will get back to you soon.', '');
+    this.openSnackBar(`Thanks ${this.contactForm.value.name}  for reaching out. I will get back to you soon.`, '');
 
     if (this.contactForm.value.botfield) {
       return;
