@@ -13,7 +13,7 @@ import { LoadableModule, matcher } from 'ngx-loadable';
 import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     LoadableModule.forRoot({moduleConfigs: [
         { name: 'portfolio', loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule), matcher }
       ]
