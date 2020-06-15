@@ -14,7 +14,7 @@
           netlify-honey-pot="bot-field"
           data-netlify="true"
           [formGroup]="contactForm"
-          (ngSubmit)="submitForm()"
+          (ngSubmit)="submitForm($event)"
           action="/home"
           >
           <div class="hidden">

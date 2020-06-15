@@ -21,7 +21,8 @@ export class ContactComponent implements OnInit {
   public ngOnInit(): void {
   }
 
-  public submitForm() {
+  public submitForm(e) {
+    e.preventDefault();
     console.log('submitting form', this.contactForm.value);
     const body = new HttpParams()
       .set('form-name', 'contact-form')
