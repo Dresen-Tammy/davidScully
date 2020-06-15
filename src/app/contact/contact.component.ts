@@ -21,8 +21,11 @@ export class ContactComponent implements OnInit {
   public ngOnInit(): void {
   }
 
-  public submitForm(e) {
+  public submitForm(e: Event) {
     e.preventDefault();
+    if (this.contactForm.value.botfield) {
+      return;
+    }
     console.log('submitting form', this.contactForm.value);
     const body = new HttpParams()
       .set('form-name', 'contact-form')
@@ -36,9 +39,6 @@ export class ContactComponent implements OnInit {
     .subscribe(
       (res) => {
         console.log('post successful', res);
-      },
-      response => {
-        console.log('error', response);
       },
       () => {
         console.log('Post observable complete');
