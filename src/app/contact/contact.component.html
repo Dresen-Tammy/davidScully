@@ -12,21 +12,24 @@
           class="contact-form"
           method="POST"
           data-netlify="true"
+          [formGroup]="contactForm"
+          (ngSubmit)="submitForm()"
           >
-          <input type="hidden" name="form-name" value="contact-form" />
+          <input type="hidden" name="form-name"  value="contact-form" />
           <div class="name-input">
             <label for="name">NAME</label>
-            <input type="text" name="name" class="input" required />
+            <input type="text" name="name" class="input" formControlName="name" required />
           </div>
           <div class="email-input">
             <label for="email">EMAIL</label>
-            <input type="email" name="email" class="input" required />
+            <input type="email" name="email" class="input" formControlName="email" required />
           </div>
           <div class="message-input">
             <label for="message">TELL ME HOW WE CAN WORK TOGETHER</label>
             <textarea
             name="message"
             class="textarea"
+            formControlName="message"
             required
             ></textarea>
           </div>

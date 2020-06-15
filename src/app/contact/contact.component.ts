@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
   }
 
   public submitForm() {
+    console.log('submitting form', this.contactForm.value);
     const body = new HttpParams()
     .set('form-name', 'contact-form')
     .append('name', this.contactForm.value.name)
