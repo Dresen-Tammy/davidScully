@@ -24,14 +24,18 @@ section {
 h3, label {
   color: @light-color;
   font-family: "Rubik", sans-serif;
-  .font-size(10);
   font-weight: 300;
   @media screen and (min-width: @tablet-break) {
     .font-size(12);
   }
 }
 
+label {
+  .font-size(14);
+}
+
 h3 {
+  .font-size(12);
   .rem-px(margin-bottom, 24);
 }
 
@@ -99,7 +103,7 @@ button {
   display: flex;
   .rem-px(height, 56px);
   justify-self: right;
-  .rem-px(padding, 24);
+  padding: .8125rem 1.5rem;
   .rem-px(width, 171);
 
   img {
@@ -110,8 +114,8 @@ button {
     font-family: "Rubik", sans-serif;
     .font-size(20);
     font-weight: 200;
-    .rem-px(line-height, 28px);
-    .rem-px(margin-left, 13px);
+    .rem-px(line-height, 28);
+    .rem-px(padding-left, 13);
   }
 }
 

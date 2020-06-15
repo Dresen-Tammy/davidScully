@@ -1,5 +1,5 @@
 import { Project } from './../models/project';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { Job } from '../models/job';
 
 @Component({
@@ -10,6 +10,9 @@ import { Job } from '../models/job';
 export class PortfolioComponent implements OnInit {
   public current: Project;
   public modalValue: string = 'closed';
+  public isMobileSize: boolean = false;
+  public viewWidth: number = 0;
+  public viewHeight: number = 0;
   private defaultModal = {
     id: '',
     title: '',
@@ -396,24 +399,41 @@ export class PortfolioComponent implements OnInit {
     }
   ];
 
+  @HostListener('window:resize', ['$event'])
+  public resizeCheck(event: Event): void {
+    this.checkWindowSize();
+  }
+
   public constructor() {
     this.current = this.defaultModal;
   }
 
   public ngOnInit(): void {
+    this.checkWindowSize();
   }
 
   public openModal(event: MouseEvent, project: Project) {
-    this.current = project;
-    if (this.current.category === 'logo') {
-      this.modalValue = 'openlogo';
-    } else {
-      this.modalValue = 'open';
-    }
+      this.current = project;
+      if (this.current.category === 'logo') {
+         if (this.viewWidth > this.viewHeight) {
+           this.modalValue = 'openlogowide';
+          } else {
+            this.modalValue = 'openlogo';
+          }
+        } else {
+          this.modalValue = 'open';
+        }
+      console.log(this.modalValue);
   }
 
   public closeModal() {
     this.modalValue = 'closed';
+  }
+
+  private checkWindowSize() {
+    this.isMobileSize = window.innerWidth <= 800 || window.innerHeight <= 800;
+    this.viewHeight = window.innerHeight;
+    this.viewWidth = window.innerWidth;
   }
 }
 

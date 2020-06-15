@@ -64,11 +64,24 @@ export const modalAnimation =
         ]))),
         query('.img', animate('.5s ease-in-out', keyframes([
           style({width: '0%', offset: 0}),
-          style({width: '100%', 'max-width': '64rem', offset: 1})
+          style({width: '95vw', 'max-width': '64rem', offset: 1})
         ]))),
        ]),
     ]),
     transition('closed => openlogo', [
+      group([
+        query('.button', animate('.5s ease-in-out', keyframes([
+          style({display: 'none', opacity: 0, offset: 0}),
+          style({display: 'block', opacity: 0, offset: .7}),
+          style({opacity: 1, offset: 1})
+        ]))),
+        query('.img', animate('.5s ease-in-out', keyframes([
+          style({width: '0vh', offset: 0}),
+          style({width: '95vw', 'max-width': '38.375rem', offset: 1})
+        ]))),
+       ]),
+    ]),
+    transition('closed => openlogowide', [
       group([
         query('.button', animate('.5s ease-in-out', keyframes([
           style({display: 'none', opacity: 0, offset: 0}),
@@ -88,12 +101,24 @@ export const modalAnimation =
           style({opacity: 0, display: 'none', offset: .1})
         ]))),
         query('.img', animate('.5s ease-in-out', keyframes([
-          style({width: '100%', 'max-width': '64rem', offset: 0}),
+          style({width: '95vw', 'max-width': '64rem', offset: 0}),
           style({width: '0%', offset: 1}),
         ]))),
       ])
     ]),
     transition('openlogo => closed', [
+      group([
+        query('.button', animate('.5s ease-in-out', keyframes([
+          style({display: 'block', opacity: 1, offset: 0}),
+          style({opacity: 0, display: 'none', offset: .1})
+        ]))),
+        query('.img', animate('.5s ease-in-out', keyframes([
+          style({width: '95vw', 'max-width': '38.375rem', offset: 0}),
+          style({width: '0vh', offset: 1}),
+        ]))),
+      ])
+    ]),
+    transition('openlogowide => closed', [
       group([
         query('.button', animate('.5s ease-in-out', keyframes([
           style({display: 'block', opacity: 1, offset: 0}),
