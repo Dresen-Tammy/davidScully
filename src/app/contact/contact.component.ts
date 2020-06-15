@@ -38,13 +38,14 @@ export class ContactComponent implements OnInit {
       .append('message', this.contactForm.value.message);
 
     console.log('body', body);
+    this.contactForm.reset();
     return;
     this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}, responseType: 'text'})
     .subscribe(
       (res) => {
         console.log('success', res);
         this.openSnackBar( `Thanks ${this.contactForm.value.name} for reaching out. I will get back to you soon.`, '');
-        this.contactForm.reset({});
+        this.contactForm.reset();
       },
       response => {
         this.openSnackBar(
