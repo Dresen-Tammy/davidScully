@@ -13,8 +13,7 @@ export class ContactComponent implements OnInit {
       botfield: [''],
       name: ['', Validators.required],
       email: ['', Validators.required],
-      message: ['', Validators.required],
-      button: []
+      message: ['', Validators.required]
   });
 
   public constructor(private fb: FormBuilder, private http: HttpClient) { }
