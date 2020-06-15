@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact',
@@ -16,13 +17,15 @@ export class ContactComponent implements OnInit {
       message: ['', Validators.required]
   });
 
-  public constructor(private fb: FormBuilder, private http: HttpClient) { }
+  public constructor(private fb: FormBuilder, private http: HttpClient, private snackBar: MatSnackBar) { }
 
   public ngOnInit(): void {
   }
 
   public submitForm(e: Event) {
     e.preventDefault();
+    this.openSnackBar('Thanks Tammy  for reaching out. I will get back to you soon.', '');
+
     if (this.contactForm.value.botfield) {
       return;
     }
@@ -35,17 +38,27 @@ export class ContactComponent implements OnInit {
       .append('message', this.contactForm.value.message);
 
     console.log('body', body);
+    return;
     this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}, responseType: 'text'})
     .subscribe(
       (res) => {
-        this.message = `Thanks for reaching out. I will get back to you soon.`;
+        console.log('success', res);
+        this.openSnackBar( `Thanks ${this.contactForm.value.name} for reaching out. I will get back to you soon.`, '');
+        this.contactForm.reset({});
       },
       response => {
-        console.log('response', response);
+        this.openSnackBar(
+          `Sorry, ${this.contactForm.value.name}, there was a problem submitting the form. Please email me at contact@daviddresen.com`, ''
+          );
       },
-      () => {
-        console.log('Post observable complete');
-      });
+      ).unsubscribe();
 
+  }
+
+  private openSnackBar(message: string, action: string) {
+    let config = new MatSnackBarConfig();
+    config.panelClass = ['david-snackbar'];
+    config.duration = 30000;
+    this.snackBar.open(message, action, config);
   }
 }

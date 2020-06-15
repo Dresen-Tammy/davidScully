@@ -14,6 +14,7 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
+    MatSnackBarModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
