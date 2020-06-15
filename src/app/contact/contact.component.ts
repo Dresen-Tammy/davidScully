@@ -35,10 +35,13 @@ export class ContactComponent implements OnInit {
       .append('message', this.contactForm.value.message);
 
     console.log('body', body);
-    this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}})
+    this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}, responseType: 'text'})
     .subscribe(
       (res) => {
         console.log('post successful', res);
+      },
+      response => {
+        console.log('response', response);
       },
       () => {
         console.log('Post observable complete');
