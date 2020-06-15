@@ -38,7 +38,7 @@ export class ContactComponent implements OnInit {
     this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}, responseType: 'text'})
     .subscribe(
       (res) => {
-        console.log('post successful', res);
+        this.message = `Thanks for reaching out. I will get back to you soon.`;
       },
       response => {
         console.log('response', response);
