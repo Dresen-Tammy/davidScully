@@ -12,8 +12,8 @@ export class ContactComponent implements OnInit {
   public message: string = '';
   public contactForm: FormGroup = this.fb.group({
       botfield: [''],
-      name: ['', Validators.required],
-      email: ['', Validators.required],
+      name: ['', Validators.required, Validators.minLength(4)],
+      email: ['', Validators.required, Validators.email],
       message: ['', Validators.required]
   });
 
@@ -39,7 +39,6 @@ export class ContactComponent implements OnInit {
 
     console.log('body', body);
     this.contactForm.reset();
-    return;
     this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}, responseType: 'text'})
     .subscribe(
       (res) => {
