@@ -8,7 +8,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
   styleUrls: ['./contact.component.less']
 })
 export class ContactComponent implements OnInit {
-
+  public message: string = '';
   public contactForm: FormGroup = this.fb.group({
       name: ['', Validators.required],
       email: ['', Validators.required],
