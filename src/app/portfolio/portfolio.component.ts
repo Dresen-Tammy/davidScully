@@ -282,7 +282,7 @@ export class PortfolioComponent implements OnInit {
         {
           id: 'glacier-logo-0',
           title: 'Fonataine Vineyards',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592329212/daviddresen/StepUP_Billboard_zde4mn.jpg',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637201/daviddresen/FontaineBarn_jozimn.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972102/daviddresen/FontaineBarn_2x_ziacim.jpg',
           category: 'logo'
         },
