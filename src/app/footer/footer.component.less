@@ -1,0 +1,51 @@
+@import '_variables.less';
+
+footer {
+  background-color: @dark-secondary-color;
+}
+
+div {
+  align-items: center;
+  display: grid;
+  font-size: "Rubik", sans-serif;
+  font-weight: 300;
+  grid-template-columns: auto 1fr;
+
+  @media screen and (min-width: @tablet-break) {
+    margin: 0 9rem;
+  }
+}
+
+p, button span {
+  color: #EFF1F2;
+  .font-size(16);
+}
+
+p {
+  padding: 3.125rem 1.875rem;
+}
+
+
+span {
+  display: none;
+
+  @media screen and (min-width: @tablet-break){
+    display: inline;
+  }
+}
+
+button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: right;
+  justify-self: right;
+
+  @media screen and (min-width: @tablet-break){
+    span {
+      .rem-px(padding-left, 13);
+      .rem-px(padding-right, 30);
+    }
+  }
+}
