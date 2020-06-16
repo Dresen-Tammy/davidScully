@@ -143,18 +143,18 @@ input {
 }
 
 .hidden {
-  visibility: hidden;
   height: 0;
   position: absolute;
+  visibility: hidden;
 }
 
 .response {
-  color: white;
-  margin-top: -30px;
-  margin-bottom: 50px;
   background-color: #379ebc;
-  padding: 25px 20px;
-  font-size: 20px;
+  color: white;
+  .rem-px(font-size, 20);
+  .rem-px(margin-bottom, 50);
+  .rem-px(margin-top, -30);
+  padding: 1.5rem 1.25rem;
 }
 
 .errors {
@@ -168,7 +168,7 @@ input {
 }
 
 .invalid-feedback {
-  margin-top: -28px;
-  display: block;
   color: rgb(236, 108, 108);
+  display: block;
+  .rem-px(margin-top, -28);
 }
