@@ -8,29 +8,80 @@
       <address href="mailto:contact@daviddresen.com">contact@daviddresen.com</address>
       or by filling out the contact form.</h4>
         <form
+          novalidate
           name="contact-form"
           class="contact-form"
           method="POST"
           data-netlify="true"
+          [formGroup]="contactForm"
+          (ngSubmit)="submitForm($event)"
           >
-          <input type="hidden" name="form-name" value="contact-form" />
+          <div class="hidden">
+            <label>Don’t fill this out if you're human:
+              <input name="bot-field" formControlName="botfield" />
+            </label>
+          </div>
+          <input
+            type="hidden"
+            name="form-name"
+            value="contact-form"
+            />
           <div class="name-input">
             <label for="name">NAME</label>
-            <input type="text" name="name" class="input" required />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="input"
+              min-length="3"
+              formControlName="name"
+              (blur)="inputChange($event)"
+              [ngClass]="{errors: contactForm.get('name').errors && nameTouched}"
+              required
+              />
+              <span class="invalid-feedback" *ngIf="contactForm.get('name').errors && nameTouched">
+                Please enter your name.
+              </span>
           </div>
           <div class="email-input">
             <label for="email">EMAIL</label>
-            <input type="email" name="email" class="input" required />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="input"
+              formControlName="email"
+              (blur)="inputChange($event)"
+              [ngClass]="{errors: contactForm.get('email').errors && emailTouched}"
+              required
+              />
+              <span class="invalid-feedback" *ngIf="contactForm.get('email').errors && emailTouched">
+                Please enter a valid email address.
+              </span>
           </div>
           <div class="message-input">
             <label for="message">TELL ME HOW WE CAN WORK TOGETHER</label>
             <textarea
-            name="message"
-            class="textarea"
-            required
+              id="message"
+              name="message"
+              class="textarea"
+              min-length="3"
+              formControlName="message"
+              (blur)="inputChange($event)"
+              [ngClass]="{errors: contactForm.get('message').errors && messageTouched}"
+              required
             ></textarea>
+            <span class="invalid-feedback" *ngIf="contactForm.get('message').errors && messageTouched">
+              Please enter your message.
+            </span>
           </div>
-          <button type="submit"><img src="../../assets/images/envelope.svg"/><span>SUBMIT</span></button>
+          <button
+            type="submit"
+            [ngClass]="{invalid: !contactForm.valid}"
+            [disabled]="!contactForm.valid"
+            >
+            <img src="../../assets/images/envelope.svg"/><span>SUBMIT</span>
+          </button>
       </form>
   </div>
 </section>

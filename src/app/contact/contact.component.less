@@ -82,7 +82,7 @@ form {
     .font-size(15);
     .rem-px(line-height, 25);
     margin: .625rem 0 1.875rem;
-    .rem-px(padding, 5);
+    padding: .3125rem .625rem;
   }
 }
 
@@ -103,8 +103,10 @@ button {
   display: flex;
   .rem-px(height, 56px);
   justify-self: right;
-  padding: .8125rem 1.5rem;
+  padding: .5rem 1.5rem;
   .rem-px(width, 171);
+  border-radius: 2px;
+  border: 1px solid #379EBC;
 
   img {
     width: 28px;
@@ -120,7 +122,7 @@ button {
 }
 
 input {
-  .rem-px(height, 56);
+  .rem-px(height, 40);
   .rem-px(width, 326);
   max-width: 100%;
 }
@@ -138,4 +140,35 @@ input {
   button {
     grid-column-start: 2;
   }
+}
+
+.hidden {
+  height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.response {
+  background-color: #379ebc;
+  color: white;
+  .rem-px(font-size, 20);
+  .rem-px(margin-bottom, 50);
+  .rem-px(margin-top, -30);
+  padding: 1.5rem 1.25rem;
+}
+
+.errors {
+  background-color: rgb(224, 178, 185);
+}
+
+.invalid {
+  background-color: transparent;
+  border: .2px solid @light-color;
+  opacity: .6;
+}
+
+.invalid-feedback {
+  color: rgb(236, 108, 108);
+  display: block;
+  .rem-px(margin-top, -28);
 }
