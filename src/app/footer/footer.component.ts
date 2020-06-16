@@ -8,14 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private scroll: ViewportScroller) { }
+  public constructor(private scroll: ViewportScroller) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
   public scrollToTop() {
     this.scroll.scrollToPosition([0, 0]);
-
   }
 
 }
