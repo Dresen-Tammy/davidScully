@@ -15,7 +15,6 @@
           data-netlify="true"
           [formGroup]="contactForm"
           (ngSubmit)="submitForm($event)"
-          action="/home"
           >
           <div class="hidden">
             <label>Don’t fill this out if you're human:
@@ -64,7 +63,7 @@
             <label for="message">TELL ME HOW WE CAN WORK TOGETHER</label>
             <textarea
               id="message"
-              name="message "
+              name="message"
               class="textarea"
               min-length="3"
               formControlName="message"

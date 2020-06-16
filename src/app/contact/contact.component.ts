@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-contact',
@@ -44,12 +45,13 @@ export class ContactComponent extends BaseControlValueAccessor<boolean> implemen
 
     const body = new HttpParams()
       .set('form-name', 'contact-form')
-      .append('bot-field', botfield)
       .append('name', name)
       .append('email', email)
       .append('message', message);
 
+    console.log(body);
     this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}, responseType: 'text'})
+      .pipe(take(1))
       .subscribe(
         (res) => {
           console.log('success', res);
@@ -63,8 +65,9 @@ export class ContactComponent extends BaseControlValueAccessor<boolean> implemen
           this.openSnackBar(
             `Sorry, ${this.contactForm.value.name}, there was a problem submitting the form. Please email me at contact@daviddresen.com`, ''
             );
-        }
-      ).unsubscribe();
+        },
+        () => {console.log('done');}
+      );
   }
 
   public inputChange($event: any): void {
