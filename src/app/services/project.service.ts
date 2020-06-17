@@ -1,5 +1,5 @@
 import { Job } from './../models/job';
-import { Project } from 'src/app/models/project';
+import { Project } from './../models/project';
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
 
@@ -8,8 +8,8 @@ import { Observable, BehaviorSubject } from 'rxjs';
 })
 export class ProjectService {
   public readonly currentProject$: Observable<Project>;
-  public readonly first$ : Observable<boolean>;
-  public readonly last$ : Observable<boolean>;
+  public readonly first$: Observable<boolean>;
+  public readonly last$: Observable<boolean>;
   private currentProjectBS: BehaviorSubject<Project>;
   private firstBS: BehaviorSubject<boolean>;
   private lastBS: BehaviorSubject<boolean>;
@@ -36,7 +36,8 @@ export class ProjectService {
       id: 'global',
       h3: 'GLOBAL CREATIVE DIRECTOR',
       h4: 'Since January 2016, I have been leading all Creative Direction for product and digital design for HP Print.',
-      text: 'Working with a team of cross-discipline designers, I manage all creative, while defining and implementing innovative design strategies and brand solutions. Our work is focused on elevating customer experiences across HP Print.',
+      text: `Working with a team of cross-discipline designers, I manage all creative, while defining and implementing
+      innovative design strategies and brand solutions. Our work is focused on elevating customer experiences across HP Print.`,
       class: 'light-section',
       projects: [
         {
@@ -64,7 +65,7 @@ export class ProjectService {
           id: 'global-project-3',
           title: 'Ink Packaging Lineup',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592279756/daviddresen/Packaging_lineup_ehc5ws.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592279756/daviddresen/Packaging_lineup_2_56x_bvzb82.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592424529/daviddresen/MarcoPolo_lineup_2x_rcsgdd.jpg',
           category: 'global-creative'
         },
         {
@@ -108,7 +109,9 @@ export class ProjectService {
       id: 'head',
       h3: 'HEAD OF GLOBAL CREATIVE',
       h4: 'From 2010-2015, I led all Creative for product and digital design for HP Print.',
-      text: 'I worked with a team of cross-discipline designers, managing all creative, defining and implementing innovative design strategies and brand solutions, and focusing on elevating customers\' experiences across HP Print. Here is a sampling of both strategic exploration and in-market solutions.',
+      text: `I worked with a team of cross-discipline designers, managing all creative, defining
+      and implementing innovative design strategies and brand solutions, and focusing on elevating
+      customers\' experiences across HP Print. Here is a sampling of both strategic exploration and in-market solutions.`,
       class: 'dark-section',
       projects: [
         {
@@ -182,14 +185,14 @@ export class ProjectService {
           category: 'head-creative'
         },
         {
-          id: 'head-project-9',
+          id: 'head-project-10',
           title: 'Photo Book',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592281431/daviddresen/PhotobookSpread_400_v3bcuh.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592281437/daviddresen/PhotobookSpread_1024_rdyygk.jpg',
           category: 'head-creative'
         },
         {
-          id: 'head-project-10',
+          id: 'head-project-11',
           title: 'HP ePrint Center',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592281649/daviddresen/ePrintCenter400_qd7iov.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592281644/daviddresen/ePrintCenter1024_gam2v4.jpg',
@@ -201,7 +204,9 @@ export class ProjectService {
       id: 'glacier',
       h3: 'CO-FOUNDER, CREATIVE DIRECTOR',
       h4: 'Glacier Marketing is an independent design and marketing studio I co-founded with my brother in 2009.',
-      text: 'My brother and I started Glacier Marketing as an opportunity to work together in a field we both love. Although most of our clients are located in the North West, we have done work across the U.S. for clients of all sizes. We focus on providing user-centric design and marketing solutions at a great price that are both competitive and successful.',
+      text: `My brother and I started Glacier Marketing as an opportunity to work together in a field we both love.
+      Although most of our clients are located in the North West, we have done work across the U.S. for clients of all
+      sizes. We focus on providing user-centric design and marketing solutions at a great price that are both competitive and successful.`,
       class: 'light-section',
       projects: [
         {
@@ -236,7 +241,7 @@ export class ProjectService {
           id: 'glacier-project-4',
           title: 'TxtWire Infographic',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592321063/daviddresen/Txtwire_Infographic_2_t4ikk3.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592321066/daviddresen/Txtwire_Infographic_lg_n4tl7y.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592433893/daviddresen/Txtwire_Infographic_400_cdvakf.jpg',
           category: 'glacier'
         },
         {
@@ -264,7 +269,7 @@ export class ProjectService {
           id: 'glacier-project-8',
           title: 'Fontaine Wine Label',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592321509/daviddresen/fontaineWineLabel_gnho7f.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592321509/daviddresen/fontaineWineLabel_2_56x_dj5bod.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592434058/daviddresen/FontaineWine_home_500_awrgqy.jpg',
           category: 'glacier'
         },
         {
@@ -345,8 +350,12 @@ export class ProjectService {
     {
       id: 'logoworks',
       h3: 'SENIOR DESIGNER, DESIGN DIRECTOR',
-      h4: 'From 2005-2010, I worked as a Senior Designer, and then Design Director at Logoworks. One of the first successful online design companies, LogoWorks was eventually acquired by Hewlett Packard.',
-      text: 'This job one of the most exhausting and rewarding experiences I have had. Working side by side with a group of 25+ designers, we produced UI and print design solutions across every business landscape from startups to corporations across the globe. Some of our top clients included Nestle, Hewlett Packard, Costco, American Express, Kinkos, Intuit and the Dubai Chamber of Commerce.',
+      h4: `From 2005-2010, I worked as a Senior Designer, and then Design Director at Logoworks. One of the first
+      successful online design companies, LogoWorks was eventually acquired by Hewlett Packard.`,
+      text: `This job one of the most exhausting and rewarding experiences I have had. Working side by side with a
+      group of 25+ designers, we produced UI and print design solutions across every business landscape from startups
+      to corporations across the globe. Some of our top clients included Nestle, Hewlett Packard, Costco, American Express,
+      Kinkos, Intuit and the Dubai Chamber of Commerce.`,
       class: 'logo-section',
       projects: [
         {
@@ -374,7 +383,7 @@ export class ProjectService {
           id: 'logoworks-project-3',
           title: 'Green Events Website',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592281926/daviddresen/greenevents400_ffojqx.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896401/daviddresen/Kingfish-landing_modal_fikghd.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592432385/daviddresen/greenevents1024_nwhtvg.jpg',
           category: 'logoworks'
         },
         {
@@ -445,7 +454,7 @@ export class ProjectService {
           award: true
         },
         {
-          id: 'logoworks-logo-0',
+          id: 'logoworks-logo-1',
           title: 'Greybeard Logo',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067585/daviddresen/Graybeard_lradgu.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592067585/daviddresen/Graybeard_2x_kftdxx.jpg',
@@ -537,7 +546,6 @@ export class ProjectService {
   public setCurrentProject(jobId: string, projectId: number, category: string) {
     let project: Project;
     let arr: [];
-    console.log('setCurrent');
     if (!this.currentJob || this.currentJob.id !== jobId ) {
       this.list.forEach((job: Job) => {
         if (job.id === jobId) {
@@ -545,12 +553,10 @@ export class ProjectService {
         }
       });
     }
-    console.log(this.currentJob);
     arr = this.currentJob[category];
     project = arr[projectId];
     if (project) {
       this.currentProjectBS.next(project);
-      console.log(project);
       this.checkFirst(projectId, category);
       this.checkLast(projectId, category);
     }
@@ -558,7 +564,7 @@ export class ProjectService {
 
   // set currentProject$ to next project
   public nextProject() {
-    console.log('next');
+    // tslint:disable-next-line: prefer-const
     let [jobId, category, projectId] = this.currentProjectBS.getValue().id.split('-');
     let pid = Number(projectId) + 1;
     category += 's';
@@ -566,6 +572,7 @@ export class ProjectService {
     if (category === 'projects' && pid >= this.currentJob.projects.length) {
       category = 'logos';
       pid = 0;
+      // change class of project
     }
 
     if (category === 'logos' && pid >= this.currentJob.logos.length) {
@@ -577,8 +584,10 @@ export class ProjectService {
 
   // set currentProject to previous project
   public previousProject(): void {
-    console.log('previous');
-    let [jobId, category, projectId] = this.currentProjectBS.getValue().id.split('-');
+    let jobId;
+    let category;
+    let projectId;
+    [jobId, category, projectId] = this.currentProjectBS.getValue().id.split('-');
     let pid = Number(projectId) - 1;
     category += 's';
 
@@ -606,8 +615,10 @@ export class ProjectService {
   // check if current project is last in job
   public checkLast(projectId: number, category: string): void {
     let result = false;
-    console.log(this.currentJob.logos.length);
-    if (category === 'projects' && projectId >= this.currentJob.projects.length - 1 && this.currentJob.logos.length === 0) {
+    if (
+      category === 'projects' &&
+      projectId >= this.currentJob.projects.length - 1 &&
+      !this.currentJob.logos) {
       result = true;
     }
     if (category === 'logos' && projectId >= this.currentJob.logos.length - 1) {

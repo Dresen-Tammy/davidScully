@@ -39,15 +39,16 @@ export class PortfolioComponent implements OnInit {
       const pId = Number(id);
       if (category === 'logo') {
         this.project.setCurrentProject(job, pId, 'logos');
-        if (this.viewWidth > this.viewHeight) {
-           this.modalValue = 'openlogowide';
-        } else {
-            this.modalValue = 'openlogo';
-        }
+      //   if (this.viewWidth > this.viewHeight) {
+      //     this.modalValue = 'openlogowide';
+      //  } else {
+      //      this.modalValue = 'openlogo';
+      //  }
       } else {
           this.project.setCurrentProject(job, pId, 'projects');
-          this.modalValue = 'open';
+          // this.modalValue = 'open';
       }
+      this.modalValue = 'open';
   }
 
   public closeModal() {

@@ -24,4 +24,16 @@ export class ModalComponent implements OnInit {
     this.closeClicked.emit();
   }
 
+  public previousProject() {
+    this.project.previousProject();
+    this.modalValue = 'open';
+    console.log(this.modalValue);
+  }
+
+  public nextProject() {
+    this.project.nextProject();
+    this.modalValue = 'open';
+    console.log(this.modalValue);
+  }
+
 }

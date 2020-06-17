@@ -1,4 +1,4 @@
-import { animate, group, keyframes, query, state, style, transition, trigger} from '@angular/animations';
+import { animate, animation, group, keyframes, query, stagger, state, style, transition, trigger, useAnimation} from '@angular/animations';
 
 export const menuAnimation =
   trigger('menuAnimation', [
@@ -50,12 +50,13 @@ export const menuAnimation =
 
 
 
+
 export const modalAnimation =
   trigger('modalAnimation', [
     state('closed', style({})),
     state('open', style({})),
-    state('openlogo', style({})),
-    transition('closed => open', [
+    state('open2', style({})),
+    transition('* => open', [
       group([
         query('.button', animate('.5s ease-in-out', keyframes([
           style({display: 'none', opacity: 0, offset: 0}),
@@ -64,11 +65,11 @@ export const modalAnimation =
         ]))),
         query('.img', animate('.5s ease-in-out', keyframes([
           style({width: '0%', offset: 0}),
-          style({width: '95vw', 'max-width': '64rem', offset: 1})
+          style({width: '100%', 'max-width': '95vw', offset: 1})
         ]))),
        ]),
     ]),
-    transition('closed => openlogo', [
+    transition('* => open2', [
       group([
         query('.button', animate('.5s ease-in-out', keyframes([
           style({display: 'none', opacity: 0, offset: 0}),
@@ -76,59 +77,111 @@ export const modalAnimation =
           style({opacity: 1, offset: 1})
         ]))),
         query('.img', animate('.5s ease-in-out', keyframes([
-          style({width: '0vh', offset: 0}),
-          style({width: '95vw', 'max-width': '38.375rem', offset: 1})
-        ]))),
-       ]),
-    ]),
-    transition('closed => openlogowide', [
-      group([
-        query('.button', animate('.5s ease-in-out', keyframes([
-          style({display: 'none', opacity: 0, offset: 0}),
-          style({display: 'block', opacity: 0, offset: .7}),
-          style({opacity: 1, offset: 1})
-        ]))),
-        query('.img', animate('.5s ease-in-out', keyframes([
-          style({width: '0vh', offset: 0}),
-          style({width: '95vh', 'max-width': '38.375rem', offset: 1})
+          style({width: '0%', offset: 0}),
+          style({width: '100%', 'max-width': '95vw', offset: 1})
         ]))),
        ]),
     ]),
     transition('open => closed', [
       group([
+        query('.button',
+          animate('.5s ease-in-out', keyframes([
+            style({width: '100%', 'max-width': '95vw', offset: 0}),
+            style({width: '0vh', offset: 1})
+          ])), {
+            params: {
+              width: '1024px'
+            }
+        }),
         query('.button', animate('.5s ease-in-out', keyframes([
-          style({display: 'block', opacity: 1, offset: 0}),
-          style({opacity: 0, display: 'none', offset: .1})
+          style({opacity: 1, offset: 0}),
+          style({display: 'block', opacity: 0, offset: .3}),
+          style({display: 'none', opacity: 0, offset: 1})
         ]))),
-        query('.img', animate('.5s ease-in-out', keyframes([
-          style({width: '95vw', 'max-width': '64rem', offset: 0}),
-          style({width: '0%', offset: 1}),
-        ]))),
-      ])
-    ]),
-    transition('openlogo => closed', [
-      group([
-        query('.button', animate('.5s ease-in-out', keyframes([
-          style({display: 'block', opacity: 1, offset: 0}),
-          style({opacity: 0, display: 'none', offset: .1})
-        ]))),
-        query('.img', animate('.5s ease-in-out', keyframes([
-          style({width: '95vw', 'max-width': '38.375rem', offset: 0}),
-          style({width: '0vh', offset: 1}),
-        ]))),
-      ])
-    ]),
-    transition('openlogowide => closed', [
-      group([
-        query('.button', animate('.5s ease-in-out', keyframes([
-          style({display: 'block', opacity: 1, offset: 0}),
-          style({opacity: 0, display: 'none', offset: .1})
-        ]))),
-        query('.img', animate('.5s ease-in-out', keyframes([
-          style({width: '95vh', 'max-width': '38.375rem', offset: 0}),
-          style({width: '0vh', offset: 1}),
-        ]))),
-      ])
+      ]),
     ])
   ]);
 
+
+
+
+
+const openAnimation = animation(
+  group([
+    query('.button',
+      animate('.5s ease-in-out', keyframes([
+        style({width: '0vh', offset: 0}),
+        style({width: '95vw', 'max-width': '{{width}}', offset: 1})
+      ])), {
+        params: {
+          width: '1024px'
+        }
+    }),
+    query('.button', animate('.5s ease-in-out', keyframes([
+      style({display: 'none', opacity: 0, offset: 0}),
+      style({display: 'block', opacity: 0, offset: .7}),
+      style({opacity: 1, offset: 1})
+    ]))),
+  ]),
+);
+
+const closeAnimation = animation(
+  group([
+    query('.button',
+      animate('.5s ease-in-out', keyframes([
+        style({width: '95vw', 'max-width': '{{width}}', offset: 0}),
+        style({width: '0vh', offset: 1})
+      ])), {
+        params: {
+          width: '1024px'
+        }
+    }),
+    query('.button', animate('.5s ease-in-out', keyframes([
+      style({opacity: 1, offset: 0}),
+      style({display: 'block', opacity: 0, offset: .3}),
+      style({display: 'none', opacity: 0, offset: 1})
+    ]))),
+  ]),
+);
+
+export const modalAnimation2 =
+  trigger('modalAnimation', [
+    transition('closed => open', group([
+      query('.button', [
+        style({
+          width: '95vw',
+          'max-width': '{{width}}'
+        }),
+        (stagger('0s', animate('.5s ease-in-out')))
+      ], {
+        params: {
+          width: '1024px'
+        }
+      }),
+      query('.button', animate('.5s ease-in-out', keyframes([
+        style({display: 'none', opacity: 0, offset: 0}),
+        style({display: 'block', opacity: 0, offset: .7}),
+        style({opacity: 1, offset: 1})
+      ]))),
+    ]),
+    ),
+    transition('open => closed', group([
+      query('.button', [
+        style({
+          width: '0vw',
+          'max-width': '0vw'
+        }),
+        (stagger('0s', animate('.5s ease-in-out')))
+      ], {
+        params: {
+          width: '1024px'
+        }
+      }),
+      query('.button', animate('.5s ease-in-out', keyframes([
+        style({opacity: 1, offset: 0}),
+        style({display: 'block', opacity: 0, offset: .3}),
+        style({display: 'none', opacity: 0, offset: 1})
+      ]))),
+    ]),
+    ),
+  ]);

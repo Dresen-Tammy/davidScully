@@ -26,18 +26,18 @@
       <button
       class="button back"
       [class.hidden]="vm.first"
-      (click)="project.previousProject()"
+      (click)="previousProject()"
       name="previous project"
       >
-      <i class="material-icons">arrow_back_ios</i>
+      <img src="../../../assets//images/back.svg" alt="back">
     </button>
       <button
       class="button forward"
       [class.hidden]="vm.last"
-      (click)="project.nextProject()"
+      (click)="nextProject()"
       name="next project"
       >
-      <i class="material-icons">arrow_forward_ios</i>
+      <img src="../../../assets//images/forward.svg" alt="forward">
     </button>
   </div>
 </div>

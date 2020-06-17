@@ -12,22 +12,6 @@
   position: fixed;
 }
 
-.modal {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  overflow-y: scroll;
-  position: relative;
-  width: auto;
-  .rem-px(max-width, 1024);
-}
-
-.logos .modal {
-  width: auto;
-  .rem-px(max-width, 800);
-}
-
 button {
   background: transparent;
   border: none;
@@ -43,6 +27,7 @@ button {
 
 .back, .forward {
   top: 50%;
+
 }
 
 .back {
@@ -50,11 +35,65 @@ button {
   left: .3125rem;
 }
 
+.modal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  width: auto;
+  .rem-px(max-width, 1024);
+  .back, .forward {
+    img {
+      background-color: rgba(1,1,1,.2);
+      border-radius: 50%;
+      .rem-px(width, 30);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .back img, .forward img {
+      width: unset;
+      background-color: transparent;
+    }
+    .back {
+      .rem-px(left, -80);
+    }
+    .forward {
+      .rem-px(right, -80);
+    }
+  }
+}
+
+.openlogo .modal, .openlogowide .modal {
+  width: auto;
+  .rem-px(max-width, 800);
+  .back, .forward {
+    img {
+      background-color: rgba(1,1,1,.2);
+      border-radius: 50%;
+      .rem-px(width, 30);
+    }
+  }
+  @media screen and (min-width: 56.25rem) {
+    .back img, .forward img {
+      width: unset;
+        background-color: transparent;
+    }
+    .back {
+      .rem-px(left, -80);
+    }
+    .forward {
+      .rem-px(right, -80);
+    }
+  }
+}
+
 i {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .img {
   z-index: 10;
+  max-width: 95vw;
 }
 
 p {
@@ -102,8 +141,8 @@ p {
 
 .open  {
   .img {
-    width: 95vw;
-    max-width: 64rem;
+    width: 100%;
+    max-width: 95vw;
   }
   .p {
     height: auto;
@@ -139,6 +178,3 @@ p {
     max-width: 64rem;
   }
 }
-
-
-
