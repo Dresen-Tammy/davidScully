@@ -285,9 +285,9 @@ export class ProjectService {
       logos: [
         {
           id: 'glacier-logo-0',
-          title: 'Fonataine Vineyards',
-          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591637201/daviddresen/FontaineBarn_jozimn.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591972102/daviddresen/FontaineBarn_2x_ziacim.jpg',
+          title: 'B One Logo',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592363852/daviddresen/B_one_wpks6a.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592363852/daviddresen/B_one_2x_oj8ogv.jpg',
           category: 'logo'
         },
         {
