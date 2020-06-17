@@ -1,8 +1,13 @@
 <div
-class="app-modal"
-[class]="modalValue"
-[@modalAnimation]="{value:modalValue}"
->
+  *ngIf="{
+    project: project.currentProject$ | async,
+    first: project.first$ | async,
+    last: project.last$ | async
+  } as vm"
+  class="app-modal"
+  [class]="modalValue"
+  [@modalAnimation]="{value:modalValue}"
+  >
   <div class="overlay" (click)="closeModal()">
   </div>
   <div class="modal">
@@ -15,8 +20,24 @@ class="app-modal"
     </button>
     <img
       class="img"
-      [src]="project.modalSrc"
-      [alt]="project.title"
+      [src]="vm.project.modalSrc"
+      [alt]="vm.project.title"
       />
+      <button
+      class="button back"
+      [class.hidden]="vm.first"
+      (click)="project.previousProject()"
+      name="previous project"
+      >
+      <i class="material-icons">arrow_back_ios</i>
+    </button>
+      <button
+      class="button forward"
+      [class.hidden]="vm.last"
+      (click)="project.nextProject()"
+      name="next project"
+      >
+      <i class="material-icons">arrow_forward_ios</i>
+    </button>
   </div>
 </div>

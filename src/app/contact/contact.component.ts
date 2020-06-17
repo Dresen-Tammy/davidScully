@@ -49,12 +49,10 @@ export class ContactComponent extends BaseControlValueAccessor<boolean> implemen
       .append('email', email)
       .append('message', message);
 
-    console.log(body);
     this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded'}, responseType: 'text'})
       .pipe(take(1))
       .subscribe(
         (res) => {
-          console.log('success', res);
           this.openSnackBar( `Thanks ${this.contactForm.value.name} for reaching out. I will get back to you soon.`, '');
           this.nameTouched = false;
           this.emailTouched = false;
