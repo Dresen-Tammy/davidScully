@@ -362,7 +362,7 @@ export class ProjectService {
           id: 'logoworks-project-0',
           title: 'Website Kingfish',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592154710/daviddresen/KingFish_thumb_pxm34l.jpg',
-          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1591896401/daviddresen/Kingfish-landing_modal_fikghd.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592441003/daviddresen/KingFish_modal_xdwupx.jpg',
           category: 'logoworks'
         },
         {
