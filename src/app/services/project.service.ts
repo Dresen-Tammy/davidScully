@@ -38,6 +38,9 @@ export class ProjectService {
       h4: 'Since January 2016, I have been leading all Creative Direction for product and digital design for HP Print.',
       text: `Working with a team of cross-discipline designers, I manage all creative, while defining and implementing
       innovative design strategies and brand solutions. Our work is focused on elevating customer experiences across HP Print.`,
+      text2: `In 2018, I started to define and build a new HP Pan-Print Identity System that will enable a true holistic design
+      experience across all digital and physical touch points. This is still being worked on, and has not launched, so I cannot
+      share any more specific details...but stay tuned.`,
       class: 'light-section',
       projects: [
         {

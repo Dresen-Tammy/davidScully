@@ -7,6 +7,7 @@
       <h3>{{item.h3}}</h3>
       <h4>{{item.h4}}</h4>
       <p>{{item.text}}</p>
+      <p *ngIf="item.text2" class="text2">{{item.text2}}</p>
     </div>
     <div *ngIf="item.projects" class="misc gallery">
       <div
