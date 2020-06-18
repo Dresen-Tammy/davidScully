@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { AuthService } from './auth.service';
+import { Component, OnInit } from '@angular/core';
 import { menuAnimation } from './animations';
+
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,7 @@ import { menuAnimation } from './animations';
   styleUrls: ['./app.component.less'],
   animations: [menuAnimation]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   public title = 'daviddresen';
   public navigation: {} = [
     {
@@ -25,6 +27,15 @@ export class AppComponent {
   ];
   public opened: boolean = false;
   public openValue: string = 'close';
+
+
+  public constructor(private auth: AuthService) {
+
+  }
+
+  public ngOnInit() {
+    this.auth.localAuthSetup();
+  }
 
   public toggleOpen(): void {
     if (this.opened) {

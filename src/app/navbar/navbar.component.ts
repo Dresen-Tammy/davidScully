@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Location, ViewportScroller } from '@angular/common';
@@ -11,7 +12,8 @@ export class NavbarComponent implements OnInit {
   public constructor(
     private location: Location,
     private scroll: ViewportScroller,
-    private router: Router
+    private router: Router,
+    public auth: AuthService
   ) {
   }
 

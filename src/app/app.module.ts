@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FooterComponent } from './footer/footer.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CallbackComponent } from './callback/callback.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     MobileNavComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ProfileComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,

@@ -46,5 +46,11 @@
         <span class="nav-content">contact</span>
       </a>
     </li>
+    <li>
+      <button (click)="auth.login()" *ngIf="!auth.loggedIn"></button>
+    </li>
+    <li>
+      <button (click)="auth.logout()" *ngIf="auth.loggedIn"></button>
+    </li>
   </ul>
 </nav>
