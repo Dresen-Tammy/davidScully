@@ -69,34 +69,16 @@ export const modalAnimation =
         ]))),
        ]),
     ]),
-    transition('* => open2', [
-      group([
-        query('.button', animate('.5s ease-in-out', keyframes([
-          style({display: 'none', opacity: 0, offset: 0}),
-          style({display: 'block', opacity: 0, offset: .7}),
-          style({opacity: 1, offset: 1})
-        ]))),
-        query('.img', animate('.5s ease-in-out', keyframes([
-          style({width: '0%', offset: 0}),
-          style({width: '100%', 'max-width': '95vw', offset: 1})
-        ]))),
-       ]),
-    ]),
     transition('open => closed', [
       group([
-        query('.button',
-          animate('.5s ease-in-out', keyframes([
-            style({width: '100%', 'max-width': '95vw', offset: 0}),
-            style({width: '0vh', offset: 1})
-          ])), {
-            params: {
-              width: '1024px'
-            }
-        }),
         query('.button', animate('.5s ease-in-out', keyframes([
           style({opacity: 1, offset: 0}),
           style({display: 'block', opacity: 0, offset: .3}),
           style({display: 'none', opacity: 0, offset: 1})
+        ]))),
+        query('.img', animate('.5s ease-in-out', keyframes([
+          style({width: '100%', 'max-width': '95vw', offset: 0}),
+          style({width: '0vh', offset: 1})
         ]))),
       ]),
     ])
