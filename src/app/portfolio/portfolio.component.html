@@ -14,7 +14,7 @@
         [class.winner]="project.award"
         *ngFor="let project of item.projects"
         aria-label="view project"
-        (click)="openModal($event, project)"
+        (click)="openModal(project.id)"
         >
         <img
           [src]="project.src"
@@ -34,7 +34,7 @@
       [class.winner]="project.award"
       *ngFor="let project of item.logos"
       aria-label="view project"
-      (click)="openModal($event, project)"
+      (click)="openModal(project.id)"
       >
       <img
         [src]="project.src"
@@ -51,7 +51,6 @@
   [modalValue]="modalValue"
   [class]="modalValue"
   class="app-modal"
-  [project]="current"
   (closeClicked)="closeModal()"
   ></app-modal>
 </section>
@@ -59,3 +58,4 @@
 
 
 
+<!-- [modalValue]="value:modalValue, params{width}" -->

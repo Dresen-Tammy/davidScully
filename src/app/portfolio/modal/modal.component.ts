@@ -1,3 +1,4 @@
+import { ProjectService } from './../../services/project.service';
 import { modalAnimation } from '../../animations';
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Project } from 'src/app/models/project';
@@ -10,11 +11,10 @@ import { Project } from 'src/app/models/project';
 })
 export class ModalComponent implements OnInit {
 
-  @Input() public project: Project;
   @Input() public modalValue: string;
   @Output() public closeClicked: EventEmitter<any> = new EventEmitter<any>();
 
-  public constructor() {
+  public constructor(public project: ProjectService) {
    }
 
   public ngOnInit(): void {
@@ -23,4 +23,17 @@ export class ModalComponent implements OnInit {
   public closeModal() {
     this.closeClicked.emit();
   }
+
+  public previousProject() {
+    this.project.previousProject();
+    this.modalValue = 'open';
+    console.log(this.modalValue);
+  }
+
+  public nextProject() {
+    this.project.nextProject();
+    this.modalValue = 'open';
+    console.log(this.modalValue);
+  }
+
 }

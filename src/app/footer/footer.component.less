@@ -11,8 +11,13 @@ div {
   font-weight: 300;
   grid-template-columns: auto 1fr;
 
-  @media screen and (min-width: @tablet-break) {
-    margin: 0 9rem;
+  @media screen and (min-width: @desktop-break) {
+    margin: 0 auto;
+    width: 980px;
+  }
+  @media screen and (min-width: 76rem){
+    margin: 0 140px;
+    width: auto;
   }
 }
 
@@ -28,8 +33,16 @@ p {
 
 span {
   display: none;
+}
 
+button span {
   @media screen and (min-width: @tablet-break){
+    display: inline;
+  }
+}
+
+p span {
+  @media screen and (min-width: @desktop-break){
     display: inline;
   }
 }
@@ -41,11 +54,12 @@ button {
   display: flex;
   justify-content: right;
   justify-self: right;
+  margin-right: 1.25rem;
 
   @media screen and (min-width: @tablet-break){
     span {
       .rem-px(padding-left, 13);
-      .rem-px(padding-right, 30);
+
     }
   }
 }
