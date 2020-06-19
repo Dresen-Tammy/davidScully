@@ -10,10 +10,10 @@ import { Location, ViewportScroller } from '@angular/common';
 })
 export class NavbarComponent implements OnInit {
   public constructor(
+    public auth: AuthService,
     private location: Location,
     private scroll: ViewportScroller,
-    private router: Router,
-    public auth: AuthService
+    private router: Router
   ) {
   }
 

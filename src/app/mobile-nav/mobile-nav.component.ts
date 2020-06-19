@@ -1,6 +1,8 @@
+
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Location, ViewportScroller } from '@angular/common';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-mobile-nav',
@@ -13,7 +15,8 @@ export class MobileNavComponent implements OnInit {
   constructor(
     private location: Location,
     private scroll: ViewportScroller,
-    private router: Router
+    private router: Router,
+    public auth: AuthService
   ) { }
 
   ngOnInit(): void {
