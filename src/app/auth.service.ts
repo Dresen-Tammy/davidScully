@@ -76,7 +76,7 @@ export class AuthService {
     this.auth0Client$.subscribe((client: Auth0Client) => {
       // Call method to log in
       client.loginWithRedirect({
-        redirect_uri: `${window.location.origin}/callback`,
+        redirect_uri: `${window.location.origin}/home`,
         appState: { target: redirectPath },
       });
     });
@@ -111,7 +111,7 @@ export class AuthService {
       // Call method to log out
       client.logout({
         client_id: 'YOUR_AUTH0_APP_CLIENT_ID',
-        returnTo: `${window.location.origin}`,
+        returnTo: `${window.location.origin}/login`,
       });
     });
   }
