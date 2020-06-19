@@ -352,7 +352,7 @@ export class ProjectService {
       h3: 'SENIOR DESIGNER, DESIGN DIRECTOR',
       h4: `From 2005-2010, I worked as a Senior Designer, and then Design Director at Logoworks. One of the first
       successful online design companies, LogoWorks was eventually acquired by Hewlett Packard.`,
-      text: `This job one of the most exhausting and rewarding experiences I have had. Working side by side with a
+      text: `This job was one of the most exhausting and rewarding experiences I have had. Working side by side with a
       group of 25+ designers, we produced UI and print design solutions across every business landscape from startups
       to corporations across the globe. Some of our top clients included Nestle, Hewlett Packard, Costco, American Express,
       Kinkos, Intuit and the Dubai Chamber of Commerce.`,
