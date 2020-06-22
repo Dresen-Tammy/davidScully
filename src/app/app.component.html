@@ -10,6 +10,7 @@
       id="mobile-navbar"
       >
       <button
+        *ngIf="auth.loggedIn"
         class="menu-icon close"
         name="Toggle menu button"
         role="button"

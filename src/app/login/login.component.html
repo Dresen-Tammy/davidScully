@@ -4,9 +4,9 @@
       <h1>hello</h1>
       <h2>I&#39;m David Dresen</h2>
     </div>
-    <div class="login" *ngIf="!auth.loggedIn">
+    <div class="login">
       <p>Thank you for your interest in my work. I will show it to you as soon as you login.</p>
-      <button (click)="auth.login('/home')">
+      <button (click)="auth.login()">
         <svg alt="lock" xmlns="http://www.w3.org/2000/svg" width="29.809" height="29.809" viewBox="0 0 29.809 29.809">
           <g id="Group_177" data-name="Group 177" transform="translate(-1353.626 2039.5)">
             <g id="Group_58" data-name="Group 58" transform="translate(1354.126 -2039)">
@@ -26,7 +26,7 @@
         <span>LOGIN</span>
       </button>
     </div>
-    <div class="login" *ngIf="auth.loggedIn">
+    <!-- <div class="login" *ngIf="auth.loggedIn">
       <p>Thank you for your interest in my work. Click here to view my portfolio.</p>
       <button (click)="auth.login('/home')">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.5 26.501">
@@ -45,6 +45,6 @@
         </svg>
         <span>PORTFOLIO</span>
       </button>
-    </div>
+    </div> -->
   </section>
 </div>

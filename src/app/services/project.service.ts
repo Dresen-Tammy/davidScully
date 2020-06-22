@@ -13,15 +13,17 @@ export class ProjectService {
   private currentProjectBS: BehaviorSubject<Project>;
   private firstBS: BehaviorSubject<boolean>;
   private lastBS: BehaviorSubject<boolean>;
-
+  // tslint:disable-next-line: max-line-length
+  private defaultSrc: string = 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592844830/daviddresen/Artmanlogo-design-detail_2.56x_edtxrj.jpg';
   private defaultProject: Project;
   private currentJob: Job;
   public constructor() {
     this.defaultProject = new Project();
     this.defaultProject.id = 'default';
     this.defaultProject.title = 'David Dresen';
-    this.defaultProject.src = 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592331594/daviddresen/d2_m3tcni.jpg';
-    this.defaultProject.modalSrc = 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592331594/daviddresen/d2_m3tcni.jpg';
+    // tslint:disable-next-line: max-line-length
+    this.defaultProject.src = this.defaultSrc;
+    this.defaultProject.modalSrc = this.defaultSrc;
     this.defaultProject.category = 'default';
     this.currentProjectBS = new BehaviorSubject<Project>(this.defaultProject);
     this.firstBS = new BehaviorSubject<boolean>(false);
@@ -625,5 +627,11 @@ export class ProjectService {
       result = true;
     }
     this.lastBS.next(result);
+  }
+
+  public setDefaultProject(): void {
+    setTimeout(() => {
+      this.currentProjectBS.next(this.defaultProject);
+    }, 500);
   }
 }
