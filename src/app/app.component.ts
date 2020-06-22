@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   public openValue: string = 'close';
 
 
-  public constructor(private auth: AuthService) {
+  public constructor(public auth: AuthService) {
 
   }
 

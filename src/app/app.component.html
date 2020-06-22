@@ -4,7 +4,7 @@
     [class.shift]="opened"
     #main
   >
-    <app-navbar class="header"></app-navbar>
+    <app-navbar class="header" *ngIf="auth.loggedIn"></app-navbar>
     <div
       class="mobile-nav"
       id="mobile-navbar"

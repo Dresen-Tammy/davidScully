@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  auth: {
+    clientID: 'L6m087wNcROeRsxwc1ENW20Z03jOFARJ',
+    domain: 'dev-5cklnsk4.us.auth0.com', // e.g., https://you.auth0.com/
+    audience: 'http://localhost:4200', // e.g., http://localhost:3001
+    redirect: `${window.location.origin}/callback`,
+    scope: 'openid profile email'
+  }
 };
 
 /*
@@ -20,4 +27,3 @@ export const environment = {
   create contact page
   award violator
 */
-
