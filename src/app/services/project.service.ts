@@ -36,8 +36,10 @@ export class ProjectService {
       id: 'global',
       h3: 'GLOBAL CREATIVE DIRECTOR',
       h4: 'Since January 2016, I have been leading all Creative Direction for product and digital design for HP Print.',
-      text: `Working with a team of cross-discipline designers, I manage all creative, while defining and implementing
-      innovative design strategies and brand solutions. Our work is focused on elevating customer experiences across HP Print.`,
+      text: `I direct and collaborate with a team of cross-discipline designers, defining and implementing innovative design
+      strategies and brand solutions, across HP Print. One of my main responsibilities is to define and build a new HP Pan-Print
+      Identity System that will enable a true holistic design experience across all digital and physical touch points, below are
+      a few examples of that work that I can share that is in market.`,
       class: 'light-section',
       projects: [
         {
@@ -109,9 +111,9 @@ export class ProjectService {
       id: 'head',
       h3: 'HEAD OF GLOBAL CREATIVE',
       h4: 'From 2010-2015, I led all Creative for product and digital design for HP Print.',
-      text: `I worked with a team of cross-discipline designers, managing all creative, defining
-      and implementing innovative design strategies and brand solutions, and focusing on elevating
-      customers\' experiences across HP Print. Here is a sampling of both strategic exploration and in-market solutions.`,
+      text: `I hired, developed, and directed a team of cross-discipline designers, managing all creative, while defining
+      and producing user-centered design solutions across digital and physical ecosystems. The below work is a sampling of
+      both strategic exploration and in-market solutions.`,
       class: 'dark-section',
       projects: [
         {
