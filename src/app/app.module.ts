@@ -16,7 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FooterComponent } from './footer/footer.component';
-import { ProfileComponent } from './profile/profile.component';
 import { CallbackComponent } from './callback/callback.component';
 import { LoginComponent } from './login/login.component';
 
@@ -29,7 +28,6 @@ import { LoginComponent } from './login/login.component';
     MobileNavComponent,
     ContactComponent,
     FooterComponent,
-    ProfileComponent,
     CallbackComponent,
     LoginComponent
   ],
