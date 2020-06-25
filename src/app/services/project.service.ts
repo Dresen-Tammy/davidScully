@@ -20,8 +20,8 @@ export class ProjectService {
     this.defaultProject = new Project();
     this.defaultProject.id = 'default';
     this.defaultProject.title = 'David Dresen';
-    this.defaultProject.src = 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592331594/daviddresen/d2_m3tcni.jpg';
-    this.defaultProject.modalSrc = 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592331594/daviddresen/d2_m3tcni.jpg';
+    this.defaultProject.src = 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592844830/daviddresen/Artmanlogo-design-detail_2.56x_edtxrj.jpg';
+    this.defaultProject.modalSrc = 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592844830/daviddresen/Artmanlogo-design-detail_2.56x_edtxrj.jpg';
     this.defaultProject.category = 'default';
     this.currentProjectBS = new BehaviorSubject<Project>(this.defaultProject);
     this.firstBS = new BehaviorSubject<boolean>(false);
@@ -286,6 +286,13 @@ export class ProjectService {
           title: 'Summit Billboards',
           src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592329212/daviddresen/StepUP_Billboard_zde4mn.jpg',
           modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1592329239/daviddresen/summit_lg_eu152o.jpg',
+          category: 'glacier'
+        },
+        {
+          id: 'glacier-project-11',
+          title: 'Idaho Falls Country Club',
+          src: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1593120454/daviddresen/IFCC_cards_cnp1t4.jpg',
+          modalSrc: 'https://res.cloudinary.com/dbgufprxr/image/upload/v1593120686/daviddresen/IFCC_brochure_1024_ydkjx0.jpg',
           category: 'glacier'
         }
       ],
