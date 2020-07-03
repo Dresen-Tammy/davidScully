@@ -36,4 +36,14 @@ export class ModalComponent implements OnInit {
     console.log(this.modalValue);
   }
 
+  public swipeLeft() {
+    console.log('left');
+    this.nextProject();
+  }
+
+  public swipeRight() {
+    console.log('right');
+    this.previousProject();
+  }
+
 }

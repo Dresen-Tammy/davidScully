@@ -7,6 +7,8 @@
   class="app-modal"
   [class]="modalValue"
   [@modalAnimation]="{value:modalValue}"
+  (swipeleft)='swipeLeft()'
+  (swiperight)='swipeRight()'
   >
   <div class="overlay" (click)="closeModal()">
   </div>
