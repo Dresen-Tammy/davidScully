@@ -1,7 +1,8 @@
+import { BehaviorSubject, Observable } from 'rxjs';
+
+import { Injectable } from '@angular/core';
 import { Job } from './../models/job';
 import { Project } from './../models/project';
-import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -35,11 +36,11 @@ export class ProjectService {
     {
       id: 'global',
       h3: 'GLOBAL CREATIVE DIRECTOR',
-      h4: 'Since January 2016, I have been leading all Creative Direction for product and digital design for HP Print.',
-      text: `I direct and collaborate with a team of cross-discipline designers, defining and implementing innovative design
-      strategies and brand solutions, across HP Print. One of my main responsibilities is to define and build a new HP Pan-Print
-      Identity System that will enable a true holistic design experience across all digital and physical touch points, below are
-      a few examples of that work that I can share that is in market.`,
+      h4: 'From 2016-2020, I led all creative direction for product and digital design for HP Print.',
+      text: `I directed and collaborated with a team of cross-discipline designers, defining and implementing innovative design
+      strategies and brand solutions across HP Print. One of my main responsibilities was to define and build a new HP Pan-Print
+      Identity System that enabled a true holistic design experience across all digital and physical touch points. Below are
+      a few examples of that work that is in the market that I can share.`,
       class: 'light-section',
       projects: [
         {
